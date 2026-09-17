@@ -1,18 +1,146 @@
 # Vellore Discover – Multimedia-Based Local Discovery System
 
-> An interactive multimedia-based local discovery platform designed to help users explore the heritage, culture, nature, landmarks, attractions, and lesser-known destinations of Vellore.
+<p align="center">
+  <strong>Explore Vellore. Discover Its Heritage, Culture, Nature and Hidden Destinations.</strong>
+</p>
+
+<p align="center">
+  A multimedia-based local discovery platform designed to help users explore places across Vellore through structured information, images, videos, community contributions, ratings, saved places and personalized trip planning.
+</p>
 
 ---
 
-## 📌 Project Overview
+## 1. Project Overview
 
-**Vellore Discover** is a web-based local discovery platform developed to provide an interactive and engaging way to explore places across Vellore.
+**Vellore Discover** is a web-based **Multimedia-Based Local Discovery System** developed to provide an interactive platform for discovering and exploring destinations in Vellore.
 
-The system combines structured place information with images, videos, user contributions, ratings, likes, saved places, and personalized trip planning.
+The system brings information about historical places, temples, natural attractions, parks, hills, waterfalls, dams, lakes and other local destinations into a centralized platform.
 
-The platform is designed around the idea of making local exploration easier by bringing important information about Vellore's destinations into a single digital platform.
+Unlike a conventional information website that provides only textual descriptions, Vellore Discover combines:
 
-The system contains information for **41 unique places** covering categories such as:
+- Structured place information
+- Images
+- Online videos
+- Search
+- Advanced filtering
+- Categories
+- Ratings
+- Likes
+- Saved places
+- User experiences
+- Community photographs
+- Community videos
+- Personalized trip planning
+- User authentication
+- Administrative moderation
+- Media management
+- Reports and analytics
+
+The system is designed as a complete local discovery ecosystem where visitors can discover places, learn about them through multimedia, save interesting destinations, contribute their experiences and create personalized trips.
+
+---
+
+# 2. Problem Statement
+
+Information about local destinations is often distributed across multiple platforms such as websites, map services, social media platforms, video platforms and other online sources.
+
+This can make local discovery difficult because:
+
+- Information is scattered across different platforms.
+- Lesser-known destinations may be difficult to discover.
+- Textual information alone may not provide an engaging experience.
+- Multimedia content may not be organized by place.
+- Users may not have a centralized personal collection of interesting places.
+- Users may not have an integrated way to plan trips.
+- Community experiences may not be organized systematically.
+- User-generated content requires moderation.
+- Administrators need tools to manage places, users, media and contributions.
+
+Vellore Discover addresses these challenges by providing a centralized multimedia-based platform focused on local discovery in Vellore.
+
+---
+
+# 3. Proposed Solution
+
+The proposed system provides a single platform where users can:
+
+1. Explore Vellore destinations.
+2. Search for places.
+3. Filter places by category and location.
+4. Sort available places.
+5. View detailed information about destinations.
+6. View multiple images.
+7. Watch available online videos.
+8. Like places.
+9. Save places to a personal collection.
+10. Submit ratings and experiences.
+11. Upload community photographs and videos.
+12. Create personalized trips.
+13. Arrange destinations in an itinerary.
+14. View their saved places.
+15. View their contributions.
+16. View their saved trips.
+
+Administrators can:
+
+- Manage users.
+- Manage place information.
+- Manage official images.
+- Manage official video links.
+- Review community contributions.
+- Approve contributions.
+- Reject contributions.
+- Manage trip-related information.
+- View reports and analytics.
+
+---
+
+# 4. Project Objectives
+
+## 4.1 Centralized Local Discovery
+
+Create a centralized platform for discovering destinations throughout Vellore.
+
+## 4.2 Multimedia-Based Exploration
+
+Use images and videos along with textual information to provide a richer understanding of destinations.
+
+## 4.3 Improve Local Discoverability
+
+Make both popular and lesser-known destinations easier to find.
+
+## 4.4 Community Participation
+
+Allow authenticated users to contribute experiences, ratings, photographs and videos.
+
+## 4.5 Personalized Discovery
+
+Allow users to like and save destinations that interest them.
+
+## 4.6 Trip Planning
+
+Allow users to select destinations and organize them into personalized trips.
+
+## 4.7 Content Moderation
+
+Provide administrators with a workflow for reviewing community-submitted content.
+
+## 4.8 Data Management
+
+Maintain structured information about places, users, multimedia, contributions, likes, saved places and trips.
+
+---
+
+# 5. Scope of the Project
+
+The current system is focused on **Vellore** and contains:
+
+- **41 unique active places**
+- **584 official image records**
+- **39 places with video links**
+- **2 places intentionally without video links**
+
+The platform covers multiple categories of local destinations including:
 
 - Forts & Palaces
 - Temples
@@ -20,133 +148,79 @@ The system contains information for **41 unique places** covering categories suc
 - Hills
 - Dams & Lakes
 - Parks & Nature
-- Other local attractions and destinations
+
+The architecture is designed so that the system can be expanded to additional regions in the future.
 
 ---
 
-# 🎯 Objectives
+# 6. Major Features
 
-The main objectives of Vellore Discover are:
+## 6.1 Home Page
 
-1. To create a centralized digital platform for discovering places in Vellore.
-2. To provide structured and place-specific information.
-3. To enhance place discovery using multimedia content.
-4. To allow users to search and filter places based on different criteria.
-5. To allow authenticated users to like and save places.
-6. To allow users to submit experiences, ratings, photographs, and videos.
-7. To provide an administrator interface for managing content and users.
-8. To provide moderation mechanisms for community contributions.
-9. To allow users to create and manage personalized trips.
-10. To provide reports and analytics for administrators.
+The homepage provides an entry point into the discovery platform.
+
+It includes:
+
+- Brand/navigation area
+- Hero section
+- Search
+- Advanced filters
+- Category exploration
+- Featured/explore places
+- Place cards
+- Navigation to saved places
+- Navigation to trips
+- Authentication options
 
 ---
 
-# ✨ Key Features
+## 6.2 Explore Places
 
-## 🗺️ Place Discovery
+Users can explore destinations through visually rich place cards.
 
-Users can explore destinations through a visually rich interface.
-
-Each place can contain:
+A place card can display:
 
 - Place name
-- Locality
 - Category
+- Locality
 - Description
-- Historical information
-- Physical characteristics
-- Significance
-- Visitor information
-- Transportation/access information
-- Best time or season
-- Nearby or related features
-- Images
-- Videos
-- Ratings
-- Likes
-
----
-
-## 🔎 Search and Filtering
-
-The Explore section provides multiple ways to find places.
-
-Users can:
-
-- Search by place name
-- Search using keywords
-- Filter by category
-- Filter by location
-- Sort results
-- Clear filters
-- Explore individual place pages
-
----
-
-## ❤️ Likes
-
-Authenticated users can like places.
-
-The system uses a separate Like collection to prevent duplicate likes from the same user for the same place.
-
-The place also maintains a `likeCount` for efficient display.
-
----
-
-## 🔖 Saved Places
-
-Users can privately save places for later.
-
-Saved Places are different from Likes.
-
-### Like
-
-Represents user appreciation or interest in a place.
-
-### Saved Place
-
-Represents a personal wishlist/bookmark that the user wants to revisit later.
-
-Users can:
-
-- Save a place
-- Remove a saved place
-- View all saved places
-- Check whether a particular place is already saved
-
----
-
-# ⭐ Ratings and Community Contributions
-
-Authenticated users can contribute to places.
-
-A contribution may contain:
-
 - Rating
-- Experience
-- Feedback
-- Photos
-- Video
+- Like count
+- Image
+- Explore option
 
-All contributions initially enter a moderation workflow.
+---
 
-### Contribution Workflow
+## 6.3 Search
+
+Users can search for destinations using place-related information.
+
+The search functionality communicates with the backend Places API and retrieves matching places.
+
+---
+
+## 6.4 Advanced Filtering
+
+The platform supports filtering based on:
+
+- Category
+- Location
+- Sorting
+
+Users can also clear applied filters.
+
+---
+
+## 6.5 Category-Based Discovery
+
+The platform provides category-based exploration.
+
+Current major categories include:
 
 ```text
-User
-  │
-  ▼
-Submit Contribution
-  │
-  ▼
-Pending
-  │
-  ├───────────────┐
-  ▼               ▼
-Approved        Rejected
-  │
-  ▼
-Published / Used
-  │
-  ▼
-Place Rating Updated
+Forts & Palaces
+Temples
+Waterfalls
+Hills
+Dams & Lakes
+Parks & Nature
