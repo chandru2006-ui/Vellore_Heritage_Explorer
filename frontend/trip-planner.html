@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Trip Planner | VelloreDiscover
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/trip-planner.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Vellore<span>Discover</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="saved-places.html">
+                    🔖 Saved Places
+                </a>
+
+                <a
+                    href="trip-planner.html"
+                    class="active"
+                >
+                    🗺️ Trip Planner
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="login.html"
+                    class="login-btn"
+                >
+                    Login
+                </a>
+
+                <button
+                    class="menu-btn"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="trip-planner-hero">
+
+        <div class="trip-planner-hero-content">
+
+            <span class="trip-planner-eyebrow">
+                🗺️ PLAN YOUR JOURNEY
+            </span>
+
+            <h1>
+                Create Your Vellore Trip
+            </h1>
+
+            <p>
+                Choose any places you want to visit and
+                arrange them into your personal itinerary.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="trip-planner-main">
+
+
+        <!-- =================================================
+             STEP 1 — TRIP NAME
+        ================================================== -->
+
+        <section class="trip-details-panel">
+
+            <div class="trip-section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STEP 1
+                    </span>
+
+                    <h2>
+                        Name Your Trip
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="trip-name-wrapper">
+
+                <label for="tripName">
+                    Trip Name
+                </label>
+
+                <input
+                    type="text"
+                    id="tripName"
+                    placeholder="Example: My Vellore Weekend"
+                    maxlength="100"
+                >
+
+                <small>
+                    Give your trip a memorable name.
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STEP 2 — CHOOSE PLACES
+        ================================================== -->
+
+        <section class="saved-selection-panel">
+
+            <div class="trip-section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STEP 2
+                    </span>
+
+                    <h2>
+                        Choose Places
+                    </h2>
+
+                    <p>
+                        Select any places from Vellore to
+                        include in your trip.
+                    </p>
+
+                </div>
+
+
+                <span
+                    id="selectedPlacesCount"
+                    class="selected-count"
+                >
+                    0 places selected
+                </span>
+
+            </div>
+
+
+            <!-- =================================================
+                 SEARCH
+            ================================================== -->
+
+            <div class="trip-place-search">
+
+                <label
+                    for="tripPlaceSearch"
+                    class="trip-search-label"
+                >
+                    Search Places
+                </label>
+
+                <div class="trip-search-box">
+
+                    <span class="trip-search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="search"
+                        id="tripPlaceSearch"
+                        placeholder="Search Vellore places..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="clearTripSearch"
+                        class="clear-trip-search"
+                        aria-label="Clear search"
+                        style="display:none;"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FILTER ROW
+            ================================================== -->
+
+            <div class="trip-filter-row">
+
+                <button
+                    type="button"
+                    class="trip-filter-button active"
+                    data-trip-filter="all"
+                >
+                    All Places
+                </button>
+
+                <button
+                    type="button"
+                    class="trip-filter-button"
+                    data-trip-filter="saved"
+                >
+                    🔖 Saved Places
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOADING
+            ================================================== -->
+
+            <div
+                id="savedPlacesLoading"
+                class="trip-loading"
+            >
+
+                <div class="trip-spinner"></div>
+
+                <p>
+                    Loading Vellore places...
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ERROR
+            ================================================== -->
+
+            <div
+                id="savedPlacesError"
+                class="trip-message error"
+                style="display:none;"
+            >
+
+                <div class="trip-message-icon">
+                    ⚠️
+                </div>
+
+                <h3>
+                    Unable to load places
+                </h3>
+
+                <p id="savedPlacesErrorText">
+                    Something went wrong.
+                </p>
+
+                <button
+                    type="button"
+                    id="retrySavedPlaces"
+                    class="trip-secondary-button"
+                >
+                    Try Again
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+            ================================================== -->
+
+            <div
+                id="tripNoResults"
+                class="trip-no-results"
+                style="display:none;"
+            >
+
+                <div class="trip-message-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    No Places Found
+                </h3>
+
+                <p>
+                    Try another search or choose a different
+                    filter.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PLACE GRID
+            ================================================== -->
+
+            <div
+                id="savedPlacesSelectionGrid"
+                class="saved-selection-grid"
+            >
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STEP 3 — ITINERARY
+        ================================================== -->
+
+        <section
+            id="itinerarySection"
+            class="itinerary-panel"
+        >
+
+            <div class="trip-section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        STEP 3
+                    </span>
+
+                    <h2>
+                        Your Itinerary
+                    </h2>
+
+                    <p>
+                        Arrange your selected places in the
+                        order you'd like to visit them.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="itineraryEmpty"
+                class="itinerary-empty"
+            >
+
+                <span>
+                    🗺️
+                </span>
+
+                <p>
+                    Select places above to build your itinerary.
+                </p>
+
+            </div>
+
+
+            <div
+                id="itineraryList"
+                class="itinerary-list"
+            >
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SAVE TRIP
+        ================================================== -->
+
+        <section class="trip-save-panel">
+
+            <div>
+
+                <span class="section-label">
+                    READY?
+                </span>
+
+                <h2>
+                    Save Your Trip
+                </h2>
+
+                <p>
+                    Your trip will be saved privately to
+                    your account.
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="saveTripButton"
+                class="trip-save-button"
+            >
+                💾 Save Trip
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    Vellore<span>Discover</span>
+                </div>
+
+                <p>
+                    Discover the best places around Vellore.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="saved-places.html">
+                    Saved Places
+                </a>
+
+                <a href="trip-planner.html">
+                    Trip Planner
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/auth-ui.js"></script>
+
+    <script src="js/trip-planner.js"></script>
+
+
+</body>
+
+</html>

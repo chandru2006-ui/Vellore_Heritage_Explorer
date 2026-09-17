@@ -1,0 +1,435 @@
+/* =========================================================
+   VELLORE DISCOVER
+   COMMUNITY CONTRIBUTIONS
+   ========================================================= */
+
+/* Main section */
+.contribution-section {
+    margin-top: 60px;
+    padding: 0 0 50px;
+}
+
+.contribution-section .section-heading {
+    margin-bottom: 28px;
+}
+
+.contribution-section .section-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.contribution-section .section-heading h2 {
+    margin: 0 0 10px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.contribution-section .section-heading p {
+    margin: 0;
+    max-width: 720px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTRIBUTION CARD
+   ========================================================= */
+
+.contribution-card {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.contribution-login-message {
+    padding: 28px;
+    text-align: center;
+    border-radius: 14px;
+    background: #f7f8fa;
+}
+
+.contribution-login-message p {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.contribution-login-btn,
+.contribution-submit-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.contribution-login-btn:hover,
+.contribution-submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+.contribution-login-btn:active,
+.contribution-submit-btn:active {
+    transform: translateY(0);
+}
+
+.contribution-submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.contribution-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contribution-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contribution-field label {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.contribution-field select,
+.contribution-field textarea,
+.contribution-field input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contribution-field select,
+.contribution-field textarea {
+    padding: 12px 14px;
+    border: 1px solid #d9dde3;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contribution-field select {
+    min-height: 46px;
+    cursor: pointer;
+}
+
+.contribution-field textarea {
+    min-height: 110px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.contribution-field select:focus,
+.contribution-field textarea:focus {
+    border-color: #777777;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.contribution-field input[type="file"] {
+    padding: 10px;
+    border: 1px dashed #c8ccd2;
+    border-radius: 10px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.contribution-field small {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   STATUS MESSAGE
+   ========================================================= */
+
+.contribution-status {
+    min-height: 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   COMMUNITY CONTRIBUTIONS LIST
+   ========================================================= */
+
+.contributions-list {
+    margin-top: 38px;
+}
+
+.contributions-summary {
+    margin-bottom: 20px;
+}
+
+.contributions-summary h3 {
+    margin: 0 0 8px;
+    font-size: 1.35rem;
+}
+
+.average-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #f7f8fa;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.average-rating span {
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CONTRIBUTION
+   ========================================================= */
+
+.contribution-item {
+    margin-bottom: 20px;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.045);
+}
+
+.contribution-item-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.contribution-item-header strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+.contribution-item-header span {
+    display: block;
+    font-size: 0.78rem;
+    opacity: 0.6;
+}
+
+.contribution-rating {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   EXPERIENCE / FEEDBACK
+   ========================================================= */
+
+.contribution-content {
+    margin-top: 18px;
+}
+
+.contribution-content h4,
+.contribution-media h4 {
+    margin: 0 0 7px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.contribution-content p {
+    margin: 0;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   COMMUNITY PHOTOS
+   ========================================================= */
+
+.contribution-media {
+    margin-top: 20px;
+}
+
+.contribution-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.contribution-photo-grid img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f2f3f5;
+    transition: transform 0.2s ease;
+}
+
+.contribution-photo-grid img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   COMMUNITY VIDEO
+   ========================================================= */
+
+.contribution-video {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    max-height: 430px;
+    border-radius: 12px;
+    background: #111111;
+}
+
+
+/* =========================================================
+   EMPTY / LOADING STATES
+   ========================================================= */
+
+.contributions-loading,
+.contributions-empty {
+    padding: 28px;
+    border-radius: 14px;
+    background: #f7f8fa;
+    text-align: center;
+}
+
+.contributions-empty h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+
+.contributions-empty p {
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .contribution-section {
+        margin-top: 45px;
+    }
+
+    .contribution-card {
+        padding: 24px;
+    }
+
+    .contribution-photo-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contribution-section {
+        margin-top: 38px;
+        padding-bottom: 35px;
+    }
+
+    .contribution-card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .contribution-login-message {
+        padding: 22px 16px;
+    }
+
+    .contribution-item {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .contribution-item-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contribution-rating {
+        font-size: 0.82rem;
+    }
+
+    .contribution-photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contribution-photo-grid img {
+        height: 130px;
+    }
+
+    .contribution-login-btn,
+    .contribution-submit-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .contribution-card {
+        padding: 15px;
+    }
+
+    .contribution-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contribution-photo-grid img {
+        height: 190px;
+    }
+
+}

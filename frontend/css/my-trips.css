@@ -1,0 +1,1135 @@
+/* =========================================================
+   VELLORE DISCOVER
+   MY TRIPS
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.my-trips-hero {
+    position: relative;
+
+    padding: 90px 24px 80px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f766e 0%,
+            #14b8a6 48%,
+            #06b6d4 100%
+        );
+
+    color: #ffffff;
+}
+
+
+.my-trips-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    top: -170px;
+    right: 8%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+}
+
+
+.my-trips-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    bottom: -130px;
+    left: 8%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.my-trips-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.my-trips-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 15px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.22);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+
+.my-trips-hero h1 {
+    margin:
+        18px 0 12px;
+
+    font-size:
+        clamp(36px, 5vw, 56px);
+
+    line-height: 1.1;
+
+    font-weight: 850;
+}
+
+
+.my-trips-hero p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color:
+        rgba(255, 255, 255, 0.90);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.my-trips-main {
+    width:
+        min(
+            1120px,
+            calc(100% - 40px)
+        );
+
+    margin: 0 auto;
+
+    padding:
+        55px 0 80px;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.my-trips-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.my-trips-heading h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+}
+
+
+.my-trips-heading p {
+    margin:
+        8px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.section-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0f766e;
+
+    font-size: 11px;
+
+    font-weight: 850;
+
+    letter-spacing: 1.4px;
+}
+
+
+/* =========================================================
+   CREATE NEW TRIP
+   ========================================================= */
+
+.create-new-trip-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    min-height: 44px;
+
+    padding:
+        0 18px;
+
+    border:
+        1px solid #99f6e4;
+
+    border-radius: 11px;
+
+    background: #ecfeff;
+
+    color: #0f766e;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.create-new-trip-button:hover {
+    background: #cffafe;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 18px
+        rgba(15, 118, 110, 0.13);
+}
+
+
+/* =========================================================
+   TRIPS GRID
+   ========================================================= */
+
+.my-trips-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   TRIP CARD
+   ========================================================= */
+
+.my-trip-card {
+    overflow: hidden;
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 25px
+        rgba(15, 23, 42, 0.07);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.my-trip-card:hover {
+    transform:
+        translateY(-4px);
+
+    border-color: #99f6e4;
+
+    box-shadow:
+        0 14px 34px
+        rgba(15, 23, 42, 0.11);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.my-trip-card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        18px 20px 14px;
+
+    border-bottom:
+        1px solid #f1f5f9;
+}
+
+
+.my-trip-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: #ecfeff;
+
+    font-size: 21px;
+}
+
+
+.my-trip-date {
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   CARD BODY
+   ========================================================= */
+
+.my-trip-card-body {
+    padding:
+        20px;
+}
+
+
+.my-trip-card-body h3 {
+    margin:
+        0 0 8px;
+
+    color: #111827;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+}
+
+
+.my-trip-place-count {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-bottom: 17px;
+
+    padding:
+        6px 10px;
+
+    border-radius: 999px;
+
+    background: #f0fdfa;
+
+    color: #0f766e;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   TRIP PREVIEW
+   ========================================================= */
+
+.my-trip-preview {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding:
+        14px;
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 13px;
+
+    background: #f8fafc;
+}
+
+
+.my-trip-preview-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+.my-trip-preview-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #ccfbf1;
+
+    color: #0f766e;
+
+    font-size: 10px;
+
+    font-weight: 850;
+}
+
+
+.my-trip-preview-name {
+    min-width: 0;
+
+    overflow: hidden;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.my-trip-more {
+    margin-top: 2px;
+
+    padding-left: 34px;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.my-trip-no-places {
+    padding:
+        15px;
+
+    border:
+        1px dashed #cbd5e1;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CARD ACTIONS
+   ========================================================= */
+
+.my-trip-card-actions {
+    display: flex;
+
+    gap: 10px;
+
+    padding:
+        15px 20px 20px;
+}
+
+
+.my-trip-view-button,
+.my-trip-delete-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.2s ease;
+}
+
+
+.my-trip-view-button {
+    flex: 1;
+
+    border: none;
+
+    background: #0f766e;
+
+    color: #ffffff;
+}
+
+
+.my-trip-view-button:hover {
+    background: #115e59;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.my-trip-delete-button {
+    padding:
+        0 15px;
+
+    border:
+        1px solid #fecaca;
+
+    background: #fff1f2;
+
+    color: #dc2626;
+}
+
+
+.my-trip-delete-button:hover {
+    background: #fee2e2;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.my-trips-loading {
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+.my-trips-loading p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.my-trips-spinner {
+    width: 40px;
+    height: 40px;
+
+    border:
+        4px solid #e5e7eb;
+
+    border-top-color: #0f766e;
+
+    border-radius: 50%;
+
+    animation:
+        myTripsSpin 0.8s linear infinite;
+}
+
+
+@keyframes myTripsSpin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   MESSAGE STATES
+   ========================================================= */
+
+.my-trips-message {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 35px;
+
+    border:
+        1px dashed #cbd5e1;
+
+    border-radius: 18px;
+
+    background: #f8fafc;
+
+    text-align: center;
+}
+
+
+.my-trips-message-icon {
+    margin-bottom: 12px;
+
+    font-size: 44px;
+}
+
+
+.my-trips-message h3 {
+    margin:
+        0 0 8px;
+
+    color: #111827;
+
+    font-size: 21px;
+}
+
+
+.my-trips-message p {
+    max-width: 500px;
+
+    margin:
+        0 0 20px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+.my-trips-message.error h3 {
+    color: #b91c1c;
+}
+
+
+/* =========================================================
+   MESSAGE BUTTONS
+   ========================================================= */
+
+.my-trips-primary-button,
+.my-trips-secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding:
+        0 18px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.my-trips-primary-button {
+    border: none;
+
+    background: #0f766e;
+
+    color: #ffffff;
+}
+
+
+.my-trips-primary-button:hover {
+    background: #115e59;
+}
+
+
+.my-trips-secondary-button {
+    border:
+        1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+}
+
+
+.my-trips-secondary-button:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================================================
+   NOTIFICATION
+   ========================================================= */
+
+.my-trips-notification {
+    position: fixed;
+
+    z-index: 9999;
+
+    right: 24px;
+    bottom: 24px;
+
+    max-width: 380px;
+
+    padding:
+        14px 18px;
+
+    border-radius: 12px;
+
+    background: #111827;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.20);
+
+    opacity: 0;
+
+    transform:
+        translateY(15px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.my-trips-notification.show {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+.my-trips-notification.success {
+    background: #166534;
+}
+
+
+.my-trips-notification.error {
+    background: #b91c1c;
+}
+
+
+/* =========================================================
+   TRIP DETAILS MODAL
+   ========================================================= */
+
+.trip-details-modal {
+    position: fixed;
+
+    z-index: 10000;
+
+    inset: 0;
+}
+
+
+.trip-modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(15, 23, 42, 0.58);
+
+    backdrop-filter:
+        blur(4px);
+}
+
+
+.trip-modal {
+    position: relative;
+
+    width:
+        min(
+            560px,
+            100%
+        );
+
+    max-height:
+        min(
+            700px,
+            calc(100vh - 40px)
+        );
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.trip-modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+.trip-modal-close:hover {
+    background: #e5e7eb;
+}
+
+
+.trip-modal-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 15px;
+
+    border-radius: 14px;
+
+    background: #ecfeff;
+
+    font-size: 25px;
+}
+
+
+.trip-modal h2 {
+    margin:
+        4px 0 7px;
+
+    color: #111827;
+
+    font-size: 26px;
+}
+
+
+.trip-modal-subtitle {
+    margin:
+        0 0 20px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+.trip-modal-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.trip-modal-place {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        11px 12px;
+
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 11px;
+
+    background: #f8fafc;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.trip-modal-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #ccfbf1;
+
+    color: #0f766e;
+
+    font-size: 11px;
+
+    font-weight: 850;
+}
+
+
+.trip-modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 22px;
+}
+
+
+.trip-modal-close-button {
+    min-height: 40px;
+
+    padding:
+        0 18px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.trip-modal-close-button:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .my-trips-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .my-trips-hero {
+        padding:
+            70px 20px 65px;
+    }
+
+
+    .my-trips-hero p {
+        font-size: 15px;
+    }
+
+
+    .my-trips-main {
+        width:
+            calc(100% - 24px);
+
+        padding-top: 30px;
+    }
+
+
+    .my-trips-heading {
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    .create-new-trip-button {
+        width: 100%;
+    }
+
+
+    .my-trip-card-actions {
+        flex-direction: column;
+    }
+
+
+    .my-trip-delete-button {
+        width: 100%;
+    }
+
+
+    .trip-modal {
+        padding: 24px 20px;
+    }
+
+
+    .my-trips-notification {
+        left: 15px;
+        right: 15px;
+
+        bottom: 15px;
+
+        max-width: none;
+    }
+
+}

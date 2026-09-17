@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View and manage your contributions to Vellore Discover."
+    >
+
+    <title>My Contributions | Vellore Discover</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-contributions.css">
+
+</head>
+
+
+<body class="my-contributions-page">
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Vellore<span>Discover</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="index.html"
+                    class="back-home-btn"
+                >
+                    ← Home
+                </a>
+
+                <button
+                    type="button"
+                    class="logout-btn"
+                    id="logoutButton"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="contributions-hero">
+
+            <div class="contributions-hero-overlay"></div>
+
+            <div class="contributions-hero-content">
+
+                <span class="hero-badge">
+                    YOUR JOURNEY
+                </span>
+
+                <h1>
+                    My Contributions
+                </h1>
+
+                <p>
+                    Your experiences, memories and discoveries
+                    shared with the Vellore community.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             USER SUMMARY
+        ================================================== -->
+
+        <section class="user-summary-section">
+
+            <div class="user-summary-container">
+
+
+                <div class="user-profile-card">
+
+                    <div class="user-avatar" id="userAvatar">
+                        U
+                    </div>
+
+
+                    <div class="user-profile-info">
+
+                        <span class="profile-label">
+                            COMMUNITY MEMBER
+                        </span>
+
+                        <h2 id="userName">
+                            User
+                        </h2>
+
+                        <p id="userEmail">
+                            Loading account...
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Statistics -->
+
+                <div class="contribution-statistics">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <span class="stat-number" id="totalContributions">
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                Contributions
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ⭐
+                        </div>
+
+                        <div>
+
+                            <span class="stat-number" id="totalRatings">
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                Ratings
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            📷
+                        </div>
+
+                        <div>
+
+                            <span class="stat-number" id="totalPhotos">
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                Photos
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            🎥
+                        </div>
+
+                        <div>
+
+                            <span class="stat-number" id="totalVideos">
+                                0
+                            </span>
+
+                            <span class="stat-label">
+                                Videos
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTRIBUTIONS
+        ================================================== -->
+
+        <section class="my-contributions-section">
+
+            <div class="content-container">
+
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        YOUR ACTIVITY
+                    </span>
+
+                    <h2>
+                        Contributions You've Shared
+                    </h2>
+
+                    <p>
+                        Explore everything you've contributed
+                        to Vellore Discover.
+                    </p>
+
+                </div>
+
+
+
+                <!-- General message -->
+
+                <div
+                    id="contributionsMessage"
+                    class="contributions-message"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+
+
+                <!-- Loading -->
+
+                <div
+                    id="contributionsLoading"
+                    class="contributions-loading"
+                >
+
+                    <div class="loading-spinner"></div>
+
+                    <p>
+                        Loading your contributions...
+                    </p>
+
+                </div>
+
+
+
+                <!-- Empty state -->
+
+                <div
+                    id="emptyContributions"
+                    class="empty-contributions"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        No Contributions Yet
+                    </h3>
+
+                    <p>
+                        You haven't shared an experience yet.
+                        Start exploring Vellore and share your
+                        first discovery with the community.
+                    </p>
+
+                    <a
+                        href="index.html#explore"
+                        class="explore-btn"
+                    >
+                        Explore Places
+                    </a>
+
+                </div>
+
+
+
+                <!-- Contributions Grid -->
+
+                <div
+                    id="contributionsGrid"
+                    class="contributions-grid"
+                ></div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+                    VelloreDiscover
+                </h3>
+
+                <p>
+                    Explore. Discover. Experience Vellore.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Multimedia-Based Local Discovery System
+                </p>
+
+                <p>
+                    © 2026 Vellore Discover
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/my-contributions.js"></script>
+
+</body>
+
+</html>

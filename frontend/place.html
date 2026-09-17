@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Place Details | Vellore Discover</title>
+
+    <meta
+        name="description"
+        content="Explore detailed information about places in Vellore."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/place-details.css">
+    <link rel="stylesheet" href="css/contributions.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar details-navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Vellore<span>Discover</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="login-btn">
+                    Login
+                </button>
+
+                <button
+                    class="menu-btn"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PLACE DETAILS ================= -->
+
+    <main id="placeDetails">
+
+        <!-- Loading state -->
+
+        <div class="details-loading">
+
+            <p>
+                Loading place details...
+            </p>
+
+        </div>
+
+
+        <!-- Place content will be inserted by JavaScript -->
+
+        <!-- ================= LOCATION ================= -->
+
+        <section class="place-map-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Location
+                </span>
+
+                <h2>
+                    Find This Place
+                </h2>
+
+                <p>
+                    Find this place and get directions using Google Maps.
+                </p>
+
+            </div>
+
+
+            <div class="place-location-actions">
+
+                <a
+                    id="googleMapsButton"
+                    class="map-action-btn"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📍 Open in Google Maps
+                </a>
+
+
+                <a
+                    id="googleDirectionsButton"
+                    class="map-action-btn secondary"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🚗 Get Directions
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    VelloreDiscover
+                </h3>
+
+                <p>
+                    Explore. Discover. Experience Vellore.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Multimedia-Based Local Discovery System
+                </p>
+
+                <p>
+                    © 2026 Vellore Discover
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/place-details.js"></script>
+
+</body>
+
+</html>

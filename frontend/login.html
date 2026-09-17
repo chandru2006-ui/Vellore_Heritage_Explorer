@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Vellore Discover</title>
+
+    <meta
+        name="description"
+        content="Login to Vellore Discover and share your experiences of places across Vellore."
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/auth.css"
+    >
+
+</head>
+
+
+<body class="auth-page">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar auth-navbar">
+
+        <div class="nav-container">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Vellore<span>Discover</span>
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </nav>
+
+
+            <!-- BACK HOME -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="index.html"
+                    class="auth-home-link"
+                >
+                    ← Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= LOGIN MAIN ================= -->
+
+    <main class="auth-main">
+
+
+        <section class="auth-container">
+
+
+            <!-- ================= INTRO ================= -->
+
+            <div class="auth-intro">
+
+                <p class="auth-label">
+                    WELCOME BACK
+                </p>
+
+
+                <h1>
+                    Sign in to
+                    <span>Vellore Discover</span>
+                </h1>
+
+
+                <p class="auth-description">
+
+                    Login to share your experiences,
+                    ratings, photos and videos with the
+                    Vellore Discover community.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ================= LOGIN CARD ================= -->
+
+            <div class="auth-card">
+
+
+                <div class="auth-card-header">
+
+                    <h2>
+                        Login
+                    </h2>
+
+                    <p>
+                        Enter your account details to continue.
+                    </p>
+
+                </div>
+
+
+
+                <!-- ================= MESSAGE ================= -->
+
+                <div
+                    id="authMessage"
+                    class="auth-message"
+                    role="alert"
+                    aria-live="polite"
+                    hidden
+                ></div>
+
+
+
+                <!-- ================= LOGIN FORM ================= -->
+
+                <form
+                    id="loginForm"
+                    class="auth-form"
+                    novalidate
+                >
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="email"
+                        >
+                            Email Address
+                        </label>
+
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            maxlength="100"
+                            required
+                        >
+
+
+                        <small
+                            id="emailError"
+                            class="field-error"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <div class="field-label-row">
+
+                            <label
+                                for="password"
+                            >
+                                Password
+                            </label>
+
+                        </div>
+
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                minlength="6"
+                                maxlength="100"
+                                required
+                            >
+
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+
+                        <small
+                            id="passwordError"
+                            class="field-error"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- REMEMBER / INFO -->
+
+                    <div class="auth-options">
+
+                        <span>
+                            🔐 Your account information is securely processed.
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        id="loginSubmitButton"
+                        class="auth-submit-btn"
+                    >
+                        <span id="loginButtonText">
+                            Login
+                        </span>
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- ================= REGISTER LINK ================= -->
+
+                <div class="auth-switch">
+
+                    <p>
+
+                        Don't have an account?
+
+                        <a href="register.html">
+                            Create an account
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer auth-footer">
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+                    VelloreDiscover
+                </h3>
+
+
+                <p>
+                    Explore. Discover. Experience Vellore.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Multimedia-Based Local Discovery System
+                </p>
+
+
+                <p>
+                    © 2026 Vellore Discover
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

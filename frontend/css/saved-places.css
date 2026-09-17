@@ -1,0 +1,1993 @@
+/* =========================================================
+   VELLORE DISCOVER
+   MY SAVED PLACES
+   SKY BLUE + GREEN THEME
+   HEADER / BODY / FOOTER
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL PAGE
+   ========================================================= */
+
+.saved-places-page {
+    min-height: calc(100vh - 145px);
+
+    background:
+        linear-gradient(
+            180deg,
+            #f1f9ff 0%,
+            #ffffff 42%,
+            #f4fbf8 100%
+        );
+
+    color: #172b35;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: relative;
+
+    z-index: 50;
+
+    width: 100%;
+
+    background:
+        rgba(255, 255, 255, 0.98);
+
+    border-bottom:
+        1px solid #dbeaf2;
+
+    box-shadow:
+        0 4px 18px rgba(41, 91, 115, 0.07);
+}
+
+
+.header-container {
+    width: min(1180px, 94%);
+
+    min-height: 76px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   HEADER LOGO
+   ========================================================= */
+
+.site-header .logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    flex: 0 0 auto;
+
+    color: #123f52;
+
+    font-size: 1.5rem;
+
+    font-weight: 850;
+
+    letter-spacing: -0.6px;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.site-header .logo:hover {
+    color: #18a477;
+}
+
+
+/* =========================================================
+   HEADER NAVIGATION
+   ========================================================= */
+
+.main-navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.main-navigation .nav-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 8px 14px;
+
+    border-radius: 9px;
+
+    color: #526b76;
+
+    font-size: 0.86rem;
+
+    font-weight: 750;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.main-navigation .nav-link:hover {
+    background:
+        #eaf7ff;
+
+    color:
+        #15749a;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.main-navigation .nav-link.active {
+    background:
+        linear-gradient(
+            135deg,
+            #1684ad,
+            #18a477
+        );
+
+    color:
+        #ffffff;
+
+    font-weight:
+        800;
+
+    box-shadow:
+        0 6px 16px rgba(24, 132, 173, 0.18);
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+.saved-places-page {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+
+.saved-places-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 70px 20px 64px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff3ff 0%,
+            #edf9ff 48%,
+            #e8f8f1 100%
+        );
+}
+
+
+/*
+   IMPORTANT:
+   No border-bottom here.
+   Hero and wishlist remain part of
+   the same continuous BODY.
+*/
+
+.saved-places-hero {
+    border: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   HERO DECORATION
+   ========================================================= */
+
+.saved-places-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    top: -190px;
+    right: 7%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(64, 174, 225, 0.12);
+
+    pointer-events: none;
+}
+
+
+.saved-places-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    bottom: -180px;
+    left: 5%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(24, 164, 119, 0.10);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.saved-places-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(900px, 94%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO ICON
+   ========================================================= */
+
+.saved-places-icon {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 17px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.95);
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    font-size: 29px;
+
+    box-shadow:
+        0 10px 28px rgba(35, 91, 116, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.saved-places-icon:hover {
+    transform:
+        translateY(-4px)
+        rotate(-3deg);
+
+    box-shadow:
+        0 15px 34px rgba(35, 91, 116, 0.16);
+}
+
+
+/* =========================================================
+   HERO TITLE ROW
+   ========================================================= */
+
+.saved-places-hero .saved-places-heading-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.saved-places-hero h1 {
+    margin: 0;
+
+    color:
+        #123f52;
+
+    font-size:
+        clamp(
+            34px,
+            5vw,
+            52px
+        );
+
+    font-weight:
+        850;
+
+    line-height:
+        1.08;
+
+    letter-spacing:
+        -1.5px;
+}
+
+
+/* =========================================================
+   TITLE ACCENT
+   ========================================================= */
+
+.saved-places-hero h1::after {
+    content: "";
+
+    display: block;
+
+    width: 58px;
+    height: 4px;
+
+    margin: 15px auto 0;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1684ad,
+            #18a477
+        );
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.saved-places-hero p {
+    width: min(650px, 100%);
+
+    margin: 0 auto;
+
+    color:
+        #5d747f;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.75;
+}
+
+
+/* =========================================================
+   CREATE TRIP BUTTON
+   ========================================================= */
+
+.create-trip-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    min-height: 44px;
+
+    padding: 0 17px;
+
+    border:
+        1px solid #b6ddea;
+
+    border-radius: 11px;
+
+    background:
+        #ffffff;
+
+    color:
+        #14779b;
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+
+    text-decoration:
+        none;
+
+    white-space:
+        nowrap;
+
+    box-shadow:
+        0 7px 18px rgba(42, 102, 129, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.create-trip-button:hover {
+    background:
+        #eaf8ff;
+
+    border-color:
+        #8bc9df;
+
+    color:
+        #106b8d;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(42, 102, 129, 0.14);
+}
+
+
+.create-trip-button:active {
+    transform:
+        scale(0.97);
+}
+
+
+/* =========================================================
+   BODY CONTENT
+   ========================================================= */
+
+.saved-places-section {
+    padding: 56px 20px 90px;
+
+    background:
+        transparent;
+
+    border: none;
+}
+
+
+/* =========================================================
+   BODY CONTAINER
+   ========================================================= */
+
+.saved-places-container {
+    width: min(1180px, 94%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   WISHLIST HEADING
+   ========================================================= */
+
+.saved-places-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+
+    /*
+       No border.
+       No background panel.
+       No divider.
+    */
+}
+
+
+.saved-places-heading h2 {
+    margin: 0 0 6px;
+
+    color:
+        #173a48;
+
+    font-size:
+        29px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -0.5px;
+}
+
+
+.saved-places-heading p {
+    margin: 0;
+
+    color:
+        #718791;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.6;
+}
+
+
+/* =========================================================
+   COUNT BADGE
+   ========================================================= */
+
+.saved-places-count {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width:
+        85px;
+
+    min-height:
+        36px;
+
+    padding:
+        7px 14px;
+
+    border:
+        1px solid #cce3ed;
+
+    border-radius:
+        999px;
+
+    background:
+        #ffffff;
+
+    color:
+        #16789d;
+
+    font-size:
+        12px;
+
+    font-weight:
+        850;
+
+    white-space:
+        nowrap;
+
+    box-shadow:
+        0 5px 15px rgba(35, 91, 116, 0.06);
+}
+
+
+/* =========================================================
+   SAVED PLACES GRID
+   ========================================================= */
+
+.saved-places-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        26px;
+}
+
+
+/* =========================================================
+   PLACE CARD
+   ========================================================= */
+
+.saved-place-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #dfecef;
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        0 8px 25px rgba(34, 81, 100, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.saved-place-card:hover {
+    transform:
+        translateY(-7px);
+
+    border-color:
+        #b9dce9;
+
+    box-shadow:
+        0 20px 42px rgba(34, 81, 100, 0.13);
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.saved-place-image-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    height:
+        225px;
+
+    overflow: hidden;
+
+    background:
+        #e6f0f4;
+}
+
+
+.saved-place-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.55s ease,
+        filter 0.35s ease;
+}
+
+
+.saved-place-card:hover
+.saved-place-image {
+    transform:
+        scale(1.055);
+
+    filter:
+        saturate(1.05);
+}
+
+
+/* =========================================================
+   IMAGE GRADIENT
+   ========================================================= */
+
+.saved-place-image-wrapper::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height:
+        75px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.24),
+            transparent
+        );
+
+    pointer-events:
+        none;
+}
+
+
+/* =========================================================
+   CATEGORY BADGE
+   ========================================================= */
+
+.saved-place-category {
+    position: absolute;
+
+    z-index: 3;
+
+    top: 14px;
+    left: 14px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height:
+        28px;
+
+    padding:
+        6px 11px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.80);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    color:
+        #286076;
+
+    font-size:
+        10px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.55px;
+
+    text-transform:
+        uppercase;
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.10);
+
+    backdrop-filter:
+        blur(8px);
+}
+
+
+/* =========================================================
+   REMOVE TOP BUTTON
+   ========================================================= */
+
+.saved-place-remove-top {
+    position: absolute;
+
+    z-index: 4;
+
+    top: 12px;
+    right: 12px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    padding:
+        0;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.82);
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255, 255, 255, 0.95);
+
+    color:
+        #647881;
+
+    font-size:
+        17px;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.11);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.saved-place-remove-top:hover {
+    background:
+        #fff0f2;
+
+    color:
+        #e11d48;
+
+    transform:
+        scale(1.08);
+
+    box-shadow:
+        0 8px 19px rgba(225, 29, 72, 0.16);
+}
+
+
+.saved-place-remove-top:active {
+    transform:
+        scale(0.94);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.saved-place-card-content {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding:
+        22px;
+}
+
+
+.saved-place-card-content h3 {
+    margin:
+        0 0 8px;
+
+    color:
+        #17333f;
+
+    font-size:
+        19px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.3;
+}
+
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.saved-place-location {
+    display: flex;
+
+    align-items: center;
+
+    gap:
+        4px;
+
+    margin:
+        0 0 13px;
+
+    color:
+        #718791;
+
+    font-size:
+        13px;
+
+    font-weight:
+        650;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.saved-place-description {
+    display:
+        -webkit-box;
+
+    overflow:
+        hidden;
+
+    margin:
+        0 0 20px;
+
+    color:
+        #687c85;
+
+    font-size:
+        13.5px;
+
+    line-height:
+        1.68;
+
+    -webkit-line-clamp:
+        3;
+
+    -webkit-box-orient:
+        vertical;
+}
+
+
+/* =========================================================
+   RATING + LIKES
+   ========================================================= */
+
+.saved-place-summary {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    margin-top:
+        auto;
+
+    margin-bottom:
+        18px;
+
+    padding-top:
+        15px;
+
+    /*
+       Only a subtle internal card separator.
+    */
+
+    border-top:
+        1px solid #edf3f5;
+}
+
+
+.saved-place-rating {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+}
+
+
+.saved-place-rating-stars {
+    color:
+        #f2a51c;
+
+    font-size:
+        14px;
+
+    letter-spacing:
+        1px;
+}
+
+
+.saved-place-rating-value {
+    color:
+        #536b75;
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+}
+
+
+.saved-place-likes {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        5px;
+
+    color:
+        #687b83;
+
+    font-size:
+        13px;
+
+    font-weight:
+        750;
+}
+
+
+.saved-place-heart {
+    color:
+        #e11d48;
+
+    font-size:
+        18px;
+
+    line-height:
+        1;
+}
+
+
+/* =========================================================
+   CARD ACTIONS
+   ========================================================= */
+
+.saved-place-actions {
+    display:
+        flex;
+
+    align-items:
+        stretch;
+
+    gap:
+        9px;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+   ========================================================= */
+
+.saved-place-explore {
+    flex:
+        1;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        44px;
+
+    padding:
+        10px 16px;
+
+    border:
+        none;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1684ad,
+            #18a477
+        );
+
+    color:
+        #ffffff;
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+
+    text-decoration:
+        none;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 6px 16px rgba(24, 132, 173, 0.16);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+.saved-place-explore:hover {
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.04);
+
+    box-shadow:
+        0 10px 22px rgba(24, 132, 173, 0.23);
+}
+
+
+.saved-place-explore:active {
+    transform:
+        scale(0.98);
+}
+
+
+/* =========================================================
+   REMOVE BUTTON
+   ========================================================= */
+
+.saved-place-remove {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        44px;
+
+    padding:
+        10px 14px;
+
+    border:
+        1px solid #dfe8ec;
+
+    border-radius:
+        10px;
+
+    background:
+        #ffffff;
+
+    color:
+        #657881;
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.saved-place-remove:hover {
+    border-color:
+        #fecdd3;
+
+    background:
+        #fff3f4;
+
+    color:
+        #e11d48;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.saved-place-remove:active {
+    transform:
+        scale(0.97);
+}
+
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.saved-place-remove:disabled,
+.saved-place-explore:disabled {
+    opacity:
+        0.55;
+
+    cursor:
+        wait;
+
+    transform:
+        none;
+
+    box-shadow:
+        none;
+}
+
+
+/* =========================================================
+   LOADING STATE
+   ========================================================= */
+
+.saved-places-loading {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        300px;
+
+    padding:
+        45px;
+
+    border:
+        1px solid #deebf0;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    box-shadow:
+        0 8px 25px rgba(34, 81, 100, 0.05);
+}
+
+
+.saved-loading-spinner {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    margin-bottom:
+        16px;
+
+    border:
+        4px solid #dcecf3;
+
+    border-top-color:
+        #1684ad;
+
+    border-right-color:
+        #18a477;
+
+    border-radius:
+        50%;
+
+    animation:
+        savedPlaceSpin 0.8s linear infinite;
+}
+
+
+.saved-places-loading p {
+    margin:
+        0;
+
+    color:
+        #687d86;
+
+    font-size:
+        14px;
+
+    font-weight:
+        650;
+}
+
+
+@keyframes savedPlaceSpin {
+
+    from {
+        transform:
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   EMPTY / ERROR
+   ========================================================= */
+
+.saved-places-message {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        320px;
+
+    padding:
+        45px 25px;
+
+    border:
+        1px solid #deebf0;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(255, 255, 255, 0.90);
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 8px 25px rgba(34, 81, 100, 0.05);
+}
+
+
+.saved-message-icon {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        68px;
+
+    height:
+        68px;
+
+    margin-bottom:
+        20px;
+
+    border:
+        1px solid #dcecf2;
+
+    border-radius:
+        50%;
+
+    background:
+        #eff9fd;
+
+    font-size:
+        29px;
+}
+
+
+.saved-places-message h3 {
+    margin:
+        0 0 9px;
+
+    color:
+        #17333f;
+
+    font-size:
+        23px;
+
+    font-weight:
+        850;
+}
+
+
+.saved-places-message p {
+    width:
+        min(520px, 100%);
+
+    margin:
+        0 0 24px;
+
+    color:
+        #71858e;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   EMPTY STATE EXPLORE
+   ========================================================= */
+
+.saved-explore-button {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        45px;
+
+    padding:
+        10px 20px;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1684ad,
+            #18a477
+        );
+
+    color:
+        #ffffff;
+
+    font-size:
+        14px;
+
+    font-weight:
+        850;
+
+    text-decoration:
+        none;
+
+    box-shadow:
+        0 7px 18px rgba(24, 132, 173, 0.16);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.saved-explore-button:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(24, 132, 173, 0.23);
+}
+
+
+/* =========================================================
+   RETRY
+   ========================================================= */
+
+.saved-retry-button {
+    min-height:
+        43px;
+
+    padding:
+        10px 19px;
+
+    border:
+        1px solid #dce7eb;
+
+    border-radius:
+        10px;
+
+    background:
+        #ffffff;
+
+    color:
+        #536a74;
+
+    font-family:
+        inherit;
+
+    font-size:
+        14px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.saved-retry-button:hover {
+    border-color:
+        #afd3df;
+
+    background:
+        #f0faff;
+
+    color:
+        #16779a;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    width:
+        100%;
+
+    background:
+        #123f52;
+
+    color:
+        #ffffff;
+
+    border:
+        none;
+}
+
+
+.footer-container {
+    width:
+        min(1180px, 94%);
+
+    min-height:
+        72px;
+
+    margin:
+        0 auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+}
+
+
+.footer-container p {
+    margin:
+        0;
+
+    color:
+        #c4d9e1;
+
+    font-size:
+        13px;
+
+    font-weight:
+        550;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .header-container {
+        width:
+            94%;
+
+        gap:
+            18px;
+    }
+
+    .saved-places-container {
+        width:
+            min(94%, 760px);
+    }
+
+    .saved-places-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+        gap:
+            22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .header-container {
+        min-height:
+            70px;
+    }
+
+    .main-navigation {
+        gap:
+            3px;
+    }
+
+    .main-navigation .nav-link {
+        padding:
+            8px 9px;
+
+        font-size:
+            0.78rem;
+    }
+
+    .saved-places-hero {
+        padding:
+            58px 18px 55px;
+    }
+
+    .saved-places-hero
+    .saved-places-heading-row {
+        flex-direction:
+            column;
+
+        gap:
+            16px;
+    }
+
+    .create-trip-button {
+        min-height:
+            43px;
+    }
+
+    .saved-places-heading {
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            12px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .header-container {
+        width:
+            calc(100% - 28px);
+
+        min-height:
+            66px;
+    }
+
+    .site-header .logo {
+        font-size:
+            1.25rem;
+    }
+
+    .main-navigation {
+        overflow-x:
+            auto;
+
+        max-width:
+            55%;
+
+        scrollbar-width:
+            none;
+    }
+
+    .main-navigation::-webkit-scrollbar {
+        display:
+            none;
+    }
+
+    .main-navigation .nav-link {
+        flex:
+            0 0 auto;
+
+        min-height:
+            36px;
+
+        padding:
+            7px 9px;
+
+        font-size:
+            0.74rem;
+    }
+
+    .saved-places-hero {
+        padding:
+            50px 15px 48px;
+    }
+
+    .saved-places-icon {
+        width:
+            62px;
+
+        height:
+            62px;
+
+        font-size:
+            27px;
+    }
+
+    .saved-places-hero h1 {
+        font-size:
+            34px;
+
+        letter-spacing:
+            -1px;
+    }
+
+    .saved-places-hero p {
+        font-size:
+            14px;
+    }
+
+    .saved-places-section {
+        padding:
+            42px 15px 65px;
+    }
+
+    .saved-places-container {
+        width:
+            100%;
+    }
+
+    .saved-places-heading {
+        margin-bottom:
+            22px;
+    }
+
+    .saved-places-heading h2 {
+        font-size:
+            25px;
+    }
+
+    .saved-places-grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            19px;
+    }
+
+    .saved-place-image-wrapper {
+        height:
+            220px;
+    }
+
+    .saved-place-card-content {
+        padding:
+            19px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        width:
+            calc(100% - 20px);
+
+        gap:
+            10px;
+    }
+
+    .site-header .logo {
+        font-size:
+            1.12rem;
+    }
+
+    .main-navigation {
+        max-width:
+            60%;
+    }
+
+    .main-navigation .nav-link {
+        padding:
+            6px 8px;
+
+        font-size:
+            0.70rem;
+    }
+
+    .saved-places-hero {
+        padding:
+            45px 13px 43px;
+    }
+
+    .saved-places-hero h1 {
+        font-size:
+            30px;
+    }
+
+    .saved-places-hero p {
+        font-size:
+            13.5px;
+    }
+
+    .saved-places-section {
+        padding:
+            35px 13px 55px;
+    }
+
+    .saved-place-image-wrapper {
+        height:
+            205px;
+    }
+
+    .saved-place-card-content {
+        padding:
+            17px;
+    }
+
+    .saved-place-summary {
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            9px;
+    }
+
+    .saved-place-actions {
+        flex-direction:
+            column;
+    }
+
+    .saved-place-explore,
+    .saved-place-remove {
+        width:
+            100%;
+    }
+
+    .create-trip-button {
+        width:
+            100%;
+    }
+
+    .saved-places-message {
+        min-height:
+            280px;
+
+        padding:
+            35px 20px;
+    }
+
+    .footer-container {
+        min-height:
+            65px;
+
+        padding:
+            15px;
+    }
+
+    .footer-container p {
+        font-size:
+            12px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .site-header .logo {
+        font-size:
+            1.02rem;
+    }
+
+    .main-navigation .nav-link {
+        font-size:
+            0.66rem;
+
+        padding:
+            6px 7px;
+    }
+
+    .saved-places-hero h1 {
+        font-size:
+            27px;
+    }
+
+    .saved-place-image-wrapper {
+        height:
+            190px;
+    }
+
+    .saved-place-card-content h3 {
+        font-size:
+            18px;
+    }
+
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Vellore Discover | Explore Vellore</title>
+
+    <meta
+        name="description"
+        content="Discover the heritage, nature, culture and hidden gems of Vellore."
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Vellore<span>Discover</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="#explore"
+                >
+                    Explore
+                </a>
+
+
+                <a
+                    href="#categories"
+                >
+                    Categories
+                </a>
+
+
+                <a href="developers.html">About</a>
+
+
+                <a
+                    href="saved-places.html"
+                >
+                    🔖 Saved Places
+                </a>
+
+
+                <a
+                    href="my-trips.html"
+                >
+                    🗺️ My Trips
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <!-- LOGIN -->
+
+                <a
+                    href="login.html"
+                    class="login-btn"
+                >
+                    Login
+                </a>
+
+
+                <button
+                    class="menu-btn"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    EXPLORE VELLORE
+                </p>
+
+
+                <h1>
+
+                    Discover the
+
+                    <span>
+                        Hidden Vellore
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Explore historic landmarks, peaceful lakes,
+                    majestic hills, temples, waterfalls and
+                    hidden gems across Vellore.
+
+                </p>
+
+
+
+                <!-- ================= MAIN SEARCH ================= -->
+
+                <div class="search-box">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search places in Vellore..."
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        id="searchButton"
+                        type="button"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     ADVANCED DISCOVERY FILTERS
+                     ===================================================== -->
+
+                <div
+                    id="advancedFilterContainer"
+                    class="hero-filter-container"
+                >
+
+                    <div class="hero-filter-item">
+
+                        <label
+                            for="advancedCategoryFilter"
+                        >
+                            Category
+                        </label>
+
+
+                        <select
+                            id="advancedCategoryFilter"
+                        >
+
+                            <option value="">
+                                All Categories
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="hero-filter-item">
+
+                        <label
+                            for="localityFilter"
+                        >
+                            Location
+                        </label>
+
+
+                        <select
+                            id="localityFilter"
+                        >
+
+                            <option value="">
+                                All Locations
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="hero-filter-item">
+
+                        <label
+                            for="sortFilter"
+                        >
+                            Sort By
+                        </label>
+
+
+                        <select
+                            id="sortFilter"
+                        >
+
+                            <option value="default">
+                                Default
+                            </option>
+
+                            <option value="rating">
+                                ⭐ Highest Rated
+                            </option>
+
+                            <option value="likes">
+                                ❤️ Most Liked
+                            </option>
+
+                            <option value="az">
+                                🔤 A–Z
+                            </option>
+
+                            <option value="za">
+                                🔤 Z–A
+                            </option>
+
+                            <option value="newest">
+                                🆕 Recently Added
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <button
+                        id="clearAdvancedFilters"
+                        class="hero-clear-filters"
+                        type="button"
+                    >
+                        Clear Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section
+            class="categories-section"
+            id="categories"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    EXPLORE
+                </p>
+
+
+                <h2>
+                    Explore by Category
+                </h2>
+
+
+                <p>
+                    Find places based on what you want to experience.
+                </p>
+
+            </div>
+
+
+
+            <div class="category-grid">
+
+
+                <!-- FORTS & PALACES -->
+
+                <div
+                    class="category-card"
+                    data-category="Forts & Palaces"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        🏛️
+                    </div>
+
+                    <h3>
+                        Forts & Palaces
+                    </h3>
+
+                    <p>
+                        Discover Vellore's historic architecture.
+                    </p>
+
+                </div>
+
+
+
+                <!-- TEMPLES -->
+
+                <div
+                    class="category-card"
+                    data-category="Temples"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        🛕
+                    </div>
+
+                    <h3>
+                        Temples
+                    </h3>
+
+                    <p>
+                        Explore ancient temples and sacred sites.
+                    </p>
+
+                </div>
+
+
+
+                <!-- WATERFALLS -->
+
+                <div
+                    class="category-card"
+                    data-category="Waterfalls"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        💧
+                    </div>
+
+                    <h3>
+                        Waterfalls
+                    </h3>
+
+                    <p>
+                        Find scenic waterfalls and natural escapes.
+                    </p>
+
+                </div>
+
+
+
+                <!-- HILLS -->
+
+                <div
+                    class="category-card"
+                    data-category="Hills"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        ⛰️
+                    </div>
+
+                    <h3>
+                        Hills
+                    </h3>
+
+                    <p>
+                        Experience Vellore's beautiful hill landscapes.
+                    </p>
+
+                </div>
+
+
+
+                <!-- DAMS & LAKES -->
+
+                <div
+                    class="category-card"
+                    data-category="Dams & Lakes"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        🌊
+                    </div>
+
+                    <h3>
+                        Dams & Lakes
+                    </h3>
+
+                    <p>
+                        Discover peaceful waterside destinations.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PARKS & NATURE -->
+
+                <div
+                    class="category-card"
+                    data-category="Parks & Nature"
+                    tabindex="0"
+                >
+
+                    <div class="category-icon">
+                        🌿
+                    </div>
+
+                    <h3>
+                        Parks & Nature
+                    </h3>
+
+                    <p>
+                        Relax and explore natural surroundings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FEATURED / EXPLORE ================= -->
+
+        <section
+            class="featured-section"
+            id="explore"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    DISCOVER
+                </p>
+
+
+                <h2 id="resultsTitle">
+                    Featured Places
+                </h2>
+
+
+                <p id="resultsDescription">
+                    Explore some of the remarkable places
+                    waiting for you in Vellore.
+                </p>
+
+            </div>
+
+
+
+            <!-- ================= CATEGORY FILTER BAR ================= -->
+
+            <div
+                id="categoryFilterBar"
+                style="display:none;"
+            >
+
+                <span>
+                    Showing:
+                </span>
+
+
+                <strong id="activeCategory"></strong>
+
+
+                <button
+                    id="clearCategoryButton"
+                    type="button"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= PLACES GRID ================= -->
+
+            <div
+                class="places-grid"
+                id="placesGrid"
+            >
+
+                <!--
+                    Places will be loaded
+                    from MongoDB API
+                -->
+
+                <div class="loading">
+
+                    Loading places...
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+    <div class="footer-content">
+
+        <p>
+            © 2026 Vellore Discover. All Rights Reserved.
+        </p>
+
+        <p>
+            Made with ❤️ by Vansh, Aniket Verma & Chandru
+        </p>
+
+    </div>
+</footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/auth-ui.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Admin Dashboard | Vellore Discover
+    </title>
+
+
+    <!-- =====================================================
+         GLOBAL STYLES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ADMIN APPLICATION
+    ====================================================== -->
+
+    <div class="admin-app">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="admin-sidebar">
+
+            <!-- BRAND -->
+
+            <div class="admin-sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="admin-sidebar-logo"
+                >
+                    Vellore<span>Discover</span>
+                </a>
+
+                <span class="admin-sidebar-role">
+                    ADMIN PANEL
+                </span>
+
+            </div>
+
+
+            <!-- ADMIN NAVIGATION -->
+
+            <nav
+                class="admin-sidebar-nav"
+                aria-label="Admin navigation"
+            >
+
+                <!-- OVERVIEW -->
+
+                <div class="admin-nav-group">
+
+                    <span class="admin-nav-heading">
+                        OVERVIEW
+                    </span>
+
+                    <a
+                        href="#dashboardOverview"
+                        class="admin-nav-link active"
+                    >
+
+                        <span class="admin-nav-icon">
+                            📊
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- MANAGEMENT -->
+
+                <div class="admin-nav-group">
+
+                    <span class="admin-nav-heading">
+                        MANAGEMENT
+                    </span>
+
+
+                    <a
+                        href="#placesManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            📍
+                        </span>
+
+                        <span>
+                            Places
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#usersManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            👥
+                        </span>
+
+                        <span>
+                            Users
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#mediaManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            🎬
+                        </span>
+
+                        <span>
+                            Media
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#tripsManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            🗺️
+                        </span>
+
+                        <span>
+                            Trips
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- COMMUNITY -->
+
+                <div class="admin-nav-group">
+
+                    <span class="admin-nav-heading">
+                        COMMUNITY
+                    </span>
+
+
+                    <a
+                        href="#contributionsManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            📝
+                        </span>
+
+                        <span>
+                            Contributions
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- ANALYTICS -->
+
+                <div class="admin-nav-group">
+
+                    <span class="admin-nav-heading">
+                        ANALYTICS
+                    </span>
+
+
+                    <a
+                        href="#reportsManagement"
+                        class="admin-nav-link"
+                    >
+
+                        <span class="admin-nav-icon">
+                            📈
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- SIDEBAR FOOTER -->
+
+            <div class="admin-sidebar-footer">
+
+                <a
+                    href="index.html"
+                    class="admin-sidebar-home"
+                >
+                    ← Back to Website
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN ADMIN CONTENT
+        ================================================== -->
+
+        <div class="admin-main">
+
+
+            <!-- =================================================
+                 TOP BAR
+            ================================================== -->
+
+            <header class="admin-topbar">
+
+                <div>
+
+                    <span class="admin-topbar-label">
+                        VELLORE DISCOVER
+                    </span>
+
+                    <h1>
+                        Administration
+                    </h1>
+
+                </div>
+
+
+                <div class="admin-topbar-actions">
+
+                    <a
+                        href="index.html"
+                        class="admin-topbar-home"
+                    >
+                        View Website
+                    </a>
+
+
+                    <button
+                        type="button"
+                        class="logout-btn"
+                        id="adminLogoutButton"
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DASHBOARD CONTENT
+            ================================================== -->
+
+            <main class="admin-content">
+
+
+                <!-- =============================================
+                     WELCOME / HERO
+                ============================================== -->
+
+                <section
+                    class="admin-dashboard-hero"
+                    id="dashboardOverview"
+                >
+
+                    <div>
+
+                        <span class="admin-eyebrow">
+                            ADMINISTRATION PANEL
+                        </span>
+
+                        <h2>
+                            Vellore Discover
+                            <span>
+                                Admin Dashboard
+                            </span>
+                        </h2>
+
+                        <p>
+                            Manage places, users, community
+                            contributions, media and system
+                            reports from one central dashboard.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =============================================
+                     ADMIN IDENTITY
+                ============================================== -->
+
+                <section class="admin-welcome-card">
+
+                    <div>
+
+                        <span class="admin-label">
+                            ADMINISTRATOR
+                        </span>
+
+                        <h2 id="adminName">
+                            Admin
+                        </h2>
+
+                        <p id="adminEmail">
+                            —
+                        </p>
+
+                    </div>
+
+                    <div class="admin-badge">
+                        ADMIN
+                    </div>
+
+                </section>
+
+
+
+                <!-- =============================================
+                     QUICK STATISTICS
+                ============================================== -->
+
+                <section class="admin-stats">
+
+                    <div
+                        class="admin-stat-card pending-stat"
+                    >
+
+                        <div class="stat-icon">
+                            ⏳
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Pending
+                            </span>
+
+                            <strong id="pendingCount">
+                                0
+                            </strong>
+
+                            <small>
+                                Awaiting review
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="admin-stat-card approved-stat"
+                    >
+
+                        <div class="stat-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Approved
+                            </span>
+
+                            <strong id="approvedCount">
+                                0
+                            </strong>
+
+                            <small>
+                                Published contributions
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="admin-stat-card rejected-stat"
+                    >
+
+                        <div class="stat-icon">
+                            ✕
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Rejected
+                            </span>
+
+                            <strong id="rejectedCount">
+                                0
+                            </strong>
+
+                            <small>
+                                Declined submissions
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="admin-stat-card total-stat"
+                    >
+
+                        <div class="stat-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="totalCount">
+                                0
+                            </strong>
+
+                            <small>
+                                All contributions
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =============================================
+                     MANAGEMENT OVERVIEW
+                ============================================== -->
+
+                <section class="admin-management-section">
+
+                    <div class="admin-section-title">
+
+                        <div>
+
+                            <span class="admin-label">
+                                SYSTEM MANAGEMENT
+                            </span>
+
+                            <h2>
+                                Management Center
+                            </h2>
+
+                            <p>
+                                Manage the core data and activities
+                                of Vellore Discover.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-management-grid">
+
+
+                        <!-- PLACES -->
+
+                        <article
+                            class="admin-management-card"
+                            id="placesManagement"
+                        >
+
+                            <div class="management-card-icon">
+                                📍
+                            </div>
+
+                            <div class="management-card-content">
+
+                                <span>
+                                    PLACES
+                                </span>
+
+                                <h3>
+                                    Place Management
+                                </h3>
+
+                                <p>
+                                    Add, edit, review and manage
+                                    all places available on
+                                    Vellore Discover.
+                                </p>
+
+                                <div class="management-card-actions">
+
+                                    <button
+                                        type="button"
+                                        class="admin-feature-button"
+                                        id="managePlacesButton"
+                                    >
+                                        Manage Places
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- USERS -->
+
+                        <article
+                            class="admin-management-card"
+                            id="usersManagement"
+                        >
+
+                            <div class="management-card-icon">
+                                👥
+                            </div>
+
+                            <div class="management-card-content">
+
+                                <span>
+                                    USERS
+                                </span>
+
+                                <h3>
+                                    User Management
+                                </h3>
+
+                                <p>
+                                    View registered users and
+                                    manage user accounts and
+                                    administrative roles.
+                                </p>
+
+                                <div class="management-card-actions">
+
+                                    <button
+                                        type="button"
+                                        class="admin-feature-button"
+                                        id="manageUsersButton"
+                                    >
+                                        Manage Users
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- MEDIA -->
+
+                        <!-- MEDIA -->
+
+<article
+    class="admin-management-card"
+    id="mediaManagement"
+>
+
+    <div class="management-card-icon">
+        🎬
+    </div>
+
+    <div class="management-card-content">
+
+        <span>
+            MEDIA
+        </span>
+
+        <h3>
+            Media Management
+        </h3>
+
+        <p>
+            Manage official images and videos
+            connected to the 41 places in the
+            Vellore local discovery system.
+        </p>
+
+        <div class="management-card-actions">
+
+            <button
+                type="button"
+                class="admin-feature-button"
+                id="manageMediaButton"
+            >
+                Manage Media
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+                        <!-- TRIPS -->
+
+<article
+    class="admin-management-card"
+    id="tripsManagement"
+>
+
+    <div class="management-card-icon">
+        🗺️
+    </div>
+
+    <div class="management-card-content">
+
+        <span>
+            TRIPS
+        </span>
+
+        <h3>
+            Trip Management
+        </h3>
+
+        <p>
+            Review saved visitor trips, inspect
+            itineraries, and manage trip activity
+            across the Vellore discovery system.
+        </p>
+
+        <div class="management-card-actions">
+
+            <button
+                type="button"
+                class="admin-feature-button"
+                id="manageTripsButton"
+            >
+                Manage Trips
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+                        <!-- REPORTS -->
+
+                        <article
+                            class="admin-management-card"
+                            id="reportsManagement"
+                        >
+
+                            <div class="management-card-icon">
+                                📈
+                            </div>
+
+                            <div class="management-card-content">
+
+                                <span>
+                                    ANALYTICS
+                                </span>
+
+                                <h3>
+                                    Reports & Analytics
+                                </h3>
+
+                                <p>
+                                    View statistics for places,
+                                    users, contributions, likes,
+                                    saves and trips.
+                                </p>
+
+                                <div class="management-card-actions">
+
+                                    <button
+                                        type="button"
+                                        class="admin-feature-button"
+                                        id="viewReportsButton"
+                                    >
+                                        View Reports
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =============================================
+                     PLACES MANAGEMENT
+                ============================================== -->
+
+                <section
+                    class="admin-places-section"
+                    id="placesManagementPanel"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-label">
+                                PLACE DATABASE
+                            </span>
+
+                            <h2>
+                                Places Management
+                            </h2>
+
+                            <p>
+                                Search, view, edit, add and delete
+                                places available on Vellore Discover.
+                            </p>
+
+                        </div>
+
+
+                        <div class="admin-places-header-actions">
+
+                            <span
+                                class="admin-place-total"
+                                id="adminPlacesCount"
+                            >
+                                41 Places
+                            </span>
+
+                            <button
+                                type="button"
+                                class="admin-add-place-button"
+                                id="addNewPlaceButton"
+                            >
+
+                                <span>
+                                    +
+                                </span>
+
+                                Add New Place
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SEARCH / FILTER TOOLBAR -->
+
+                    <div class="admin-places-toolbar">
+
+                        <div class="admin-place-search">
+
+                            <label
+                                for="adminPlaceSearch"
+                            >
+                                Search Places
+                            </label>
+
+                            <div class="admin-place-search-box">
+
+                                <span
+                                    class="admin-place-search-icon"
+                                >
+                                    🔍
+                                </span>
+
+                                <input
+                                    type="search"
+                                    id="adminPlaceSearch"
+                                    placeholder="Search by place name, ID, category or location..."
+                                    autocomplete="off"
+                                >
+
+                                <button
+                                    type="button"
+                                    id="clearAdminPlaceSearch"
+                                    class="admin-clear-search"
+                                    aria-label="Clear place search"
+                                >
+                                    ×
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="admin-place-filter">
+
+                            <label
+                                for="adminPlaceCategoryFilter"
+                            >
+                                Category
+                            </label>
+
+                            <select
+                                id="adminPlaceCategoryFilter"
+                            >
+
+                                <option value="">
+                                    All Categories
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="admin-place-filter">
+
+                            <label
+                                for="adminPlaceLocalityFilter"
+                            >
+                                Location
+                            </label>
+
+                            <select
+                                id="adminPlaceLocalityFilter"
+                            >
+
+                                <option value="">
+                                    All Locations
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="admin-place-filter">
+
+                            <label
+                                for="adminPlaceSort"
+                            >
+                                Sort By
+                            </label>
+
+                            <select
+                                id="adminPlaceSort"
+                            >
+
+                                <option value="default">
+                                    Default
+                                </option>
+
+                                <option value="az">
+                                    A–Z
+                                </option>
+
+                                <option value="za">
+                                    Z–A
+                                </option>
+
+                                <option value="rating">
+                                    Highest Rated
+                                </option>
+
+                                <option value="likes">
+                                    Most Liked
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="admin-clear-filters"
+                            id="clearAdminPlaceFilters"
+                        >
+                            Clear Filters
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="adminPlacesMessage"
+                        class="admin-message"
+                        hidden
+                    ></div>
+
+
+
+                    <!-- LOADING -->
+
+                    <div
+                        id="adminPlacesLoading"
+                        class="admin-loading"
+                        hidden
+                    >
+
+                        <div class="loading-spinner"></div>
+
+                        <p>
+                            Loading places...
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- EMPTY -->
+
+                    <div
+                        id="adminPlacesEmpty"
+                        class="admin-empty"
+                        hidden
+                    >
+
+                        <div class="empty-icon">
+                            📍
+                        </div>
+
+                        <h3>
+                            No places found
+                        </h3>
+
+                        <p>
+                            Try changing your search or filters.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- PLACES GRID -->
+
+                    <div
+                        id="adminPlacesGrid"
+                        class="admin-places-grid"
+                    ></div>
+
+                </section>
+
+
+
+                <!-- =============================================
+                     USER MANAGEMENT
+                ============================================== -->
+
+                <section
+                    class="admin-users-section"
+                    id="usersManagementPanel"
+                >
+
+                    <!-- SECTION HEADER -->
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-label">
+                                USER DATABASE
+                            </span>
+
+                            <h2>
+                                User Management
+                            </h2>
+
+                            <p>
+                                View registered users and manage
+                                their administrative roles.
+                            </p>
+
+                        </div>
+
+
+                        <div class="admin-users-header-actions">
+
+                            <span
+                                class="admin-user-total"
+                                id="adminUsersCount"
+                            >
+                                0 Users
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SEARCH / TOOLBAR -->
+
+                    <div class="admin-users-toolbar">
+
+                        <div class="admin-user-search">
+
+                            <label
+                                for="adminUserSearch"
+                            >
+                                Search Users
+                            </label>
+
+                            <div class="admin-user-search-box">
+
+                                <span
+                                    class="admin-user-search-icon"
+                                >
+                                    🔍
+                                </span>
+
+                                <input
+                                    type="search"
+                                    id="adminUserSearch"
+                                    placeholder="Search by name or email..."
+                                    autocomplete="off"
+                                >
+
+                                <button
+                                    type="button"
+                                    id="clearAdminUserSearch"
+                                    class="admin-clear-user-search"
+                                    aria-label="Clear user search"
+                                >
+                                    ×
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="admin-user-refresh-button"
+                            id="refreshAdminUsers"
+                        >
+                            ↻ Refresh
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="adminUsersMessage"
+                        class="admin-message"
+                        hidden
+                    ></div>
+
+
+
+                    <!-- LOADING -->
+
+                    <div
+                        id="adminUsersLoading"
+                        class="admin-users-loading"
+                        hidden
+                    >
+
+                        <div class="admin-loading-spinner"></div>
+
+                        <p>
+                            Loading users...
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ERROR -->
+
+                    <div
+                        id="adminUsersError"
+                        class="admin-users-error"
+                        hidden
+                    >
+
+                        <div class="admin-users-error-icon">
+                            ⚠️
+                        </div>
+
+                        <h3>
+                            Unable to load users
+                        </h3>
+
+                        <p id="adminUsersErrorText">
+                            Something went wrong while loading users.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="admin-user-retry-button"
+                            id="retryAdminUsers"
+                        >
+                            Try Again
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- EMPTY -->
+
+                    <div
+                        id="adminUsersEmpty"
+                        class="admin-users-empty"
+                        hidden
+                    >
+
+                        <div class="admin-users-empty-icon">
+                            👥
+                        </div>
+
+                        <h3>
+                            No users found
+                        </h3>
+
+                        <p>
+                            No registered users match your search.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- USERS GRID -->
+
+                    <div
+                        id="adminUsersGrid"
+                        class="admin-users-grid"
+                    ></div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     COMMUNITY MODERATION
+                ================================================== -->
+
+                <section
+                    class="admin-moderation-section"
+                    id="contributionsManagement"
+                >
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-label">
+                                COMMUNITY MODERATION
+                            </span>
+
+                            <h2>
+                                Contributions
+                            </h2>
+
+                            <p>
+                                Review and manage community
+                                contributions submitted by visitors.
+                            </p>
+
+                        </div>
+
+
+                        <div class="admin-filter">
+
+                            <label for="statusFilter">
+                                Filter:
+                            </label>
+
+                            <select id="statusFilter">
+
+                                <option value="pending">
+                                    Pending
+                                </option>
+
+                                <option value="approved">
+                                    Approved
+                                </option>
+
+                                <option value="rejected">
+                                    Rejected
+                                </option>
+
+                                <option value="all">
+                                    All
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="adminMessage"
+                        class="admin-message"
+                        hidden
+                    ></div>
+
+
+
+                    <!-- LOADING -->
+
+                    <div
+                        id="adminLoading"
+                        class="admin-loading"
+                        hidden
+                    >
+
+                        <div class="loading-spinner"></div>
+
+                        <p>
+                            Loading contributions...
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- EMPTY -->
+
+                    <div
+                        id="adminEmpty"
+                        class="admin-empty"
+                        hidden
+                    >
+
+                        <div class="empty-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            No contributions found
+                        </h3>
+
+                        <p>
+                            There are currently no contributions
+                            matching this filter.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- CONTRIBUTIONS -->
+
+                    <div
+                        id="adminContributionsGrid"
+                        class="admin-contributions-grid"
+                    ></div>
+
+                </section>
+
+
+
+                <!-- =================================================
+                     REPORTS & ANALYTICS
+                ================================================== -->
+
+                <section
+                    class="admin-reports-section"
+                    id="reportsManagementPanel"
+                >
+
+
+                    <!-- SECTION HEADER -->
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <span class="admin-label">
+                                SYSTEM ANALYTICS
+                            </span>
+
+                            <h2>
+                                Reports & Analytics
+                            </h2>
+
+                            <p>
+                                Monitor places, users, community
+                                activity, engagement and trip
+                                planning statistics.
+                            </p>
+
+                        </div>
+
+
+                        <div class="admin-reports-header-actions">
+
+                            <button
+                                type="button"
+                                class="admin-reports-refresh-button"
+                                id="refreshAdminReports"
+                            >
+                                ↻ Refresh Reports
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LOADING -->
+
+                    <div
+                        id="adminReportsLoading"
+                        class="admin-reports-loading"
+                        hidden
+                    >
+
+                        <div class="admin-loading-spinner"></div>
+
+                        <p>
+                            Generating reports...
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ERROR -->
+
+                    <div
+                        id="adminReportsError"
+                        class="admin-reports-error"
+                        hidden
+                    >
+
+                        <div class="admin-reports-error-icon">
+                            ⚠️
+                        </div>
+
+                        <h3>
+                            Unable to load reports
+                        </h3>
+
+                        <p id="adminReportsErrorText">
+                            Something went wrong while generating reports.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="admin-user-retry-button"
+                            id="retryAdminReports"
+                        >
+                            Try Again
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- REPORT CONTENT -->
+
+                    <div
+                        id="adminReportsContent"
+                        class="admin-reports-content"
+                        hidden
+                    >
+
+
+                        <!-- =========================================
+                             OVERVIEW STATISTICS
+                        ========================================== -->
+
+                        <div class="admin-report-group">
+
+                            <div class="admin-report-group-heading">
+
+                                <span>
+                                    OVERVIEW
+                                </span>
+
+                                <h3>
+                                    System Overview
+                                </h3>
+
+                            </div>
+
+
+                            <div class="admin-report-stat-grid">
+
+
+                                <!-- TOTAL PLACES -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        📍
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            TOTAL PLACES
+                                        </span>
+
+                                        <strong id="reportTotalPlaces">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Places in database
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+
+                                <!-- TOTAL USERS -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        👥
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            TOTAL USERS
+                                        </span>
+
+                                        <strong id="reportTotalUsers">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Registered accounts
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+
+                                <!-- CONTRIBUTIONS -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        📝
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            CONTRIBUTIONS
+                                        </span>
+
+                                        <strong id="reportTotalContributions">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Community submissions
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+
+                                <!-- LIKES -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        ♥
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            LIKES
+                                        </span>
+
+                                        <strong id="reportTotalLikes">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Place likes
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+
+                                <!-- SAVED PLACES -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        🔖
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            SAVED PLACES
+                                        </span>
+
+                                        <strong id="reportTotalSavedPlaces">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Personal saves
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+
+                                <!-- TRIPS -->
+
+                                <article class="admin-report-stat-card">
+
+                                    <div class="admin-report-stat-icon">
+                                        🗺️
+                                    </div>
+
+                                    <div>
+
+                                        <span>
+                                            TRIPS
+                                        </span>
+
+                                        <strong id="reportTotalTrips">
+                                            0
+                                        </strong>
+
+                                        <small>
+                                            Planned trips
+                                        </small>
+
+                                    </div>
+
+                                </article>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =========================================
+                             USER + CONTRIBUTION STATISTICS
+                        ========================================== -->
+
+                        <div class="admin-report-two-column">
+
+
+                            <!-- USER STATISTICS -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            USERS
+                                        </span>
+
+                                        <h3>
+                                            User Statistics
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        👥
+                                    </div>
+
+                                </div>
+
+
+                                <div class="admin-report-mini-grid">
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Total Users
+                                        </span>
+
+                                        <strong id="reportUsersTotal">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Administrators
+                                        </span>
+
+                                        <strong id="reportAdmins">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Regular Users
+                                        </span>
+
+                                        <strong id="reportRegularUsers">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- CONTRIBUTION STATISTICS -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            COMMUNITY
+                                        </span>
+
+                                        <h3>
+                                            Contribution Statistics
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        📝
+                                    </div>
+
+                                </div>
+
+
+                                <div class="admin-report-mini-grid">
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Total
+                                        </span>
+
+                                        <strong id="reportContributionsTotal">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Approved
+                                        </span>
+
+                                        <strong id="reportApprovedContributions">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Pending
+                                        </span>
+
+                                        <strong id="reportPendingContributions">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="admin-report-mini-card">
+
+                                        <span>
+                                            Rejected
+                                        </span>
+
+                                        <strong id="reportRejectedContributions">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+
+
+                        <!-- =========================================
+                             ENGAGEMENT
+                        ========================================== -->
+
+                        <div class="admin-report-group">
+
+                            <div class="admin-report-group-heading">
+
+                                <span>
+                                    ENGAGEMENT
+                                </span>
+
+                                <h3>
+                                    Visitor Activity
+                                </h3>
+
+                            </div>
+
+
+                            <div class="admin-report-engagement-grid">
+
+
+                                <div class="admin-report-engagement-card">
+
+                                    <div>
+                                        ♥
+                                    </div>
+
+                                    <span>
+                                        Place Likes
+                                    </span>
+
+                                    <strong id="reportEngagementLikes">
+                                        0
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="admin-report-engagement-card">
+
+                                    <div>
+                                        🔖
+                                    </div>
+
+                                    <span>
+                                        Saved Places
+                                    </span>
+
+                                    <strong id="reportEngagementSaves">
+                                        0
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="admin-report-engagement-card">
+
+                                    <div>
+                                        🗺️
+                                    </div>
+
+                                    <span>
+                                        Planned Trips
+                                    </span>
+
+                                    <strong id="reportEngagementTrips">
+                                        0
+                                    </strong>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =========================================
+                             TOP PLACES
+                        ========================================== -->
+
+                        <div class="admin-report-two-column">
+
+
+                            <!-- TOP LIKED -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            POPULARITY
+                                        </span>
+
+                                        <h3>
+                                            Top Liked Places
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        ♥
+                                    </div>
+
+                                </div>
+
+
+                                <div
+                                    id="topLikedPlacesReport"
+                                    class="admin-report-ranking-list"
+                                ></div>
+
+                            </article>
+
+
+
+                            <!-- TOP RATED -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            COMMUNITY RATINGS
+                                        </span>
+
+                                        <h3>
+                                            Top Rated Places
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        ★
+                                    </div>
+
+                                </div>
+
+
+                                <div
+                                    id="topRatedPlacesReport"
+                                    class="admin-report-ranking-list"
+                                ></div>
+
+                            </article>
+
+
+                        </div>
+
+
+
+                        <!-- =========================================
+                             DISTRIBUTIONS
+                        ========================================== -->
+
+                        <div class="admin-report-two-column">
+
+
+                            <!-- CATEGORY DISTRIBUTION -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            PLACES
+                                        </span>
+
+                                        <h3>
+                                            Category Distribution
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        🏷️
+                                    </div>
+
+                                </div>
+
+
+                                <div
+                                    id="categoryDistributionReport"
+                                    class="admin-report-distribution-list"
+                                ></div>
+
+                            </article>
+
+
+
+                            <!-- LOCALITY DISTRIBUTION -->
+
+                            <article class="admin-report-panel">
+
+                                <div class="admin-report-panel-header">
+
+                                    <div>
+
+                                        <span>
+                                            LOCATIONS
+                                        </span>
+
+                                        <h3>
+                                            Top Localities
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="admin-report-panel-icon">
+                                        📍
+                                    </div>
+
+                                </div>
+
+
+                                <div
+                                    id="localityDistributionReport"
+                                    class="admin-report-distribution-list"
+                                ></div>
+
+                            </article>
+
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+     MEDIA MANAGEMENT
+================================================== -->
+
+<section
+    class="admin-media-section"
+    id="mediaManagementPanel"
+>
+
+    <!-- SECTION HEADER -->
+
+    <div class="admin-section-header">
+
+        <div>
+
+            <span class="admin-label">
+                MULTIMEDIA CONTROL
+            </span>
+
+            <h2>
+                Media Management
+            </h2>
+
+            <p>
+                Manage official images and verified
+                video links connected to the 41 places
+                in Vellore Discover.
+            </p>
+
+        </div>
+
+
+        <div class="admin-media-header-actions">
+
+            <button
+                type="button"
+                class="admin-media-refresh-button"
+                id="refreshAdminMedia"
+            >
+                ↻ Refresh Media
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         LOADING
+    ================================================== -->
+
+    <div
+        id="adminMediaLoading"
+        class="admin-media-loading"
+        hidden
+    >
+
+        <div class="admin-loading-spinner"></div>
+
+        <p>
+            Loading media...
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         ERROR
+    ================================================== -->
+
+    <div
+        id="adminMediaError"
+        class="admin-media-error"
+        hidden
+    >
+
+        <div class="admin-media-error-icon">
+            ⚠️
+        </div>
+
+        <h3>
+            Unable to load media
+        </h3>
+
+        <p id="adminMediaErrorText">
+            Something went wrong while loading media.
+        </p>
+
+        <button
+            type="button"
+            class="admin-media-retry-button"
+            id="retryAdminMedia"
+        >
+            Try Again
+        </button>
+
+    </div>
+
+
+    <!-- =================================================
+         MEDIA CONTENT
+    ================================================== -->
+
+    <div
+        id="adminMediaContent"
+        class="admin-media-content"
+        hidden
+    >
+
+
+        <!-- =================================================
+             SEARCH / FILTER TOOLBAR
+        ================================================== -->
+
+        <div class="admin-media-toolbar">
+
+
+            <!-- SEARCH -->
+
+            <div class="admin-media-search">
+
+                <label
+                    for="adminMediaSearch"
+                >
+                    Search Places
+                </label>
+
+                <div class="admin-media-search-box">
+
+                    <span
+                        class="admin-media-search-icon"
+                    >
+                        🔍
+                    </span>
+
+                    <input
+                        type="search"
+                        id="adminMediaSearch"
+                        placeholder="Search by place name, ID or locality..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="clearAdminMediaSearch"
+                        class="admin-clear-media-search"
+                        aria-label="Clear media search"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORY -->
+
+            <div class="admin-media-filter">
+
+                <label
+                    for="adminMediaCategory"
+                >
+                    Category
+                </label>
+
+                <select
+                    id="adminMediaCategory"
+                >
+
+                    <option value="">
+                        All Categories
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- CLEAR FILTERS -->
+
+            <button
+                type="button"
+                class="admin-media-clear-filters"
+                id="clearAdminMediaFilters"
+            >
+                Clear Filters
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             MEDIA SUMMARY
+        ================================================== -->
+
+        <div class="admin-media-summary">
+
+
+            <!-- PLACES -->
+
+            <div class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <span>
+                        PLACES
+                    </span>
+
+                    <strong id="mediaTotalPlaces">
+                        0
+                    </strong>
+
+                    <small>
+                        Places in database
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGES -->
+
+            <div class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    🖼️
+                </div>
+
+                <div>
+
+                    <span>
+                        OFFICIAL IMAGES
+                    </span>
+
+                    <strong id="mediaTotalImages">
+                        0
+                    </strong>
+
+                    <small>
+                        Verified gallery images
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEOS -->
+
+            <div class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    🎥
+                </div>
+
+                <div>
+
+                    <span>
+                        VIDEO PLACES
+                    </span>
+
+                    <strong id="mediaPlacesWithVideo">
+                        0
+                    </strong>
+
+                    <small>
+                        Places with official video
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNITY MEDIA -->
+
+            <div class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>
+                        COMMUNITY MEDIA
+                    </span>
+
+                    <strong id="mediaCommunityItems">
+                        0
+                    </strong>
+
+                    <small>
+                        Approved community items
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             PLACE MEDIA GRID
+        ================================================== -->
+
+        <div
+            id="adminMediaGrid"
+            class="admin-media-grid"
+        ></div>
+
+
+        <!-- =================================================
+             EMPTY STATE
+        ================================================== -->
+
+        <div
+            id="adminMediaEmpty"
+            class="admin-media-empty"
+            hidden
+        >
+
+            <div class="admin-media-empty-icon">
+                🎬
+            </div>
+
+            <h3>
+                No media found
+            </h3>
+
+            <p>
+                No places match your current
+                search or category filter.
+            </p>
+
+            <button
+                type="button"
+                class="admin-media-empty-button"
+                id="clearAdminMediaEmptyFilters"
+            >
+                Clear Filters
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ============================================================
+     TRIP MANAGEMENT
+     ============================================================ -->
+
+<section
+    class="admin-section"
+    id="tripManagementPanel"
+>
+
+    <div class="admin-section-heading">
+
+        <div>
+            <span class="admin-section-kicker">
+                TRIP ACTIVITY
+            </span>
+
+            <h2>
+                Trip Management
+            </h2>
+
+            <p>
+                Review saved visitor trips, inspect
+                itineraries, and manage trip activity
+                across the Vellore discovery system.
+            </p>
+        </div>
+
+        <div class="admin-section-actions">
+
+            <button
+                type="button"
+                class="admin-secondary-button"
+                id="refreshAdminTrips"
+            >
+                ↻ Refresh
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRIP LOADING -->
+
+    <div
+        class="admin-state-card"
+        id="adminTripsLoading"
+    >
+
+        <div class="admin-state-icon">
+            ⏳
+        </div>
+
+        <h3>
+            Loading trips...
+        </h3>
+
+        <p>
+            Fetching saved visitor itineraries.
+        </p>
+
+    </div>
+
+
+    <!-- TRIP ERROR -->
+
+    <div
+        class="admin-state-card admin-state-error"
+        id="adminTripsError"
+        hidden
+    >
+
+        <div class="admin-state-icon">
+            ⚠️
+        </div>
+
+        <h3>
+            Unable to load trips
+        </h3>
+
+        <p id="adminTripsErrorText">
+            Something went wrong while loading
+            trip information.
+        </p>
+
+        <button
+            type="button"
+            class="admin-secondary-button"
+            id="retryAdminTrips"
+        >
+            Try Again
+        </button>
+
+    </div>
+
+
+    <!-- TRIP CONTENT -->
+
+    <div
+        id="adminTripsContent"
+        hidden
+    >
+
+        <!-- SUMMARY -->
+
+        <div class="admin-media-summary-grid">
+
+            <article class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    🗺️
+                </div>
+
+                <div>
+                    <span>
+                        TOTAL TRIPS
+                    </span>
+
+                    <strong id="tripTotalTrips">
+                        0
+                    </strong>
+                </div>
+
+            </article>
+
+
+            <article class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    📍
+                </div>
+
+                <div>
+                    <span>
+                        TRIP PLACES
+                    </span>
+
+                    <strong id="tripTotalPlaces">
+                        0
+                    </strong>
+                </div>
+
+            </article>
+
+
+            <article class="admin-media-summary-card">
+
+                <div class="admin-media-summary-icon">
+                    📊
+                </div>
+
+                <div>
+                    <span>
+                        AVG PLACES / TRIP
+                    </span>
+
+                    <strong id="tripAveragePlaces">
+                        0.0
+                    </strong>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="admin-media-filters">
+
+            <div class="admin-media-search">
+
+                <label for="adminTripSearch">
+                    Search Trips
+                </label>
+
+                <input
+                    type="search"
+                    id="adminTripSearch"
+                    placeholder="Search by trip name..."
+                    autocomplete="off"
+                />
+
+                <button
+                    type="button"
+                    id="clearAdminTripSearch"
+                    class="admin-media-clear-button"
+                    title="Clear search"
+                >
+                    ✕
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="admin-secondary-button"
+                id="clearAdminTripFilters"
+            >
+                Clear Filters
+            </button>
+
+        </div>
+
+
+        <!-- TRIP GRID -->
+
+        <div
+            class="admin-media-grid"
+            id="adminTripsGrid"
+        >
+        </div>
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            class="admin-state-card"
+            id="adminTripsEmpty"
+            hidden
+        >
+
+            <div class="admin-state-icon">
+                🗺️
+            </div>
+
+            <h3>
+                No trips found
+            </h3>
+
+            <p>
+                No saved trips match the current
+                search.
+            </p>
+
+            <button
+                type="button"
+                class="admin-secondary-button"
+                id="clearAdminTripsEmptyFilters"
+            >
+                Clear Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+                <!-- =============================================
+                     ADMIN ROADMAP
+                ============================================== -->
+
+                <section class="admin-roadmap-section">
+
+                    <div class="admin-section-title">
+
+                        <div>
+
+                            <span class="admin-label">
+                                ADMIN ROADMAP
+                            </span>
+
+                            <h2>
+                                System Control Center
+                            </h2>
+
+                            <p>
+                                Administration tools available
+                                across the Vellore Discover system.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-roadmap">
+
+
+                        <!-- COMMUNITY MODERATION -->
+
+                        <div class="roadmap-item completed">
+
+                            <span class="roadmap-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Community Moderation
+                                </strong>
+
+                                <p>
+                                    Pending, approved and rejected
+                                    contribution management.
+                                </p>
+
+                            </div>
+
+                            <span class="roadmap-status">
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- PLACE MANAGEMENT -->
+
+                        <div class="roadmap-item completed">
+
+                            <span class="roadmap-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Place Management
+                                </strong>
+
+                                <p>
+                                    Add, edit, delete and manage
+                                    complete place information.
+                                </p>
+
+                            </div>
+
+                            <span class="roadmap-status">
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- USER MANAGEMENT -->
+
+                        <div class="roadmap-item completed">
+
+                            <span class="roadmap-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    User Management
+                                </strong>
+
+                                <p>
+                                    Registered users, roles and
+                                    account administration.
+                                </p>
+
+                            </div>
+
+                            <span class="roadmap-status">
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- REPORTS & ANALYTICS -->
+
+                        <div class="roadmap-item completed">
+
+                            <span class="roadmap-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Reports & Analytics
+                                </strong>
+
+                                <p>
+                                    Complete system statistics and
+                                    administrative reports.
+                                </p>
+
+                            </div>
+
+                            <span class="roadmap-status">
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+
+
+            <!-- =================================================
+                 FOOTER
+            ================================================== -->
+
+            <footer class="admin-footer">
+
+                <p>
+                    © 2026 Vellore Discover.
+                    Administration Panel.
+                </p>
+
+            </footer>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/admin.js"></script>
+
+
+</body>
+
+</html>

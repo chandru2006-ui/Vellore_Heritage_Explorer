@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        My Trips | VelloreDiscover
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/my-trips.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Vellore<span>Discover</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="saved-places.html">
+                    🔖 Saved Places
+                </a>
+
+                <a
+                    href="my-trips.html"
+                    class="active"
+                >
+                    🗺️ My Trips
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="login.html"
+                    class="login-btn"
+                >
+                    Login
+                </a>
+
+                <button
+                    class="menu-btn"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="my-trips-hero">
+
+        <div class="my-trips-hero-content">
+
+            <span class="my-trips-eyebrow">
+                🗺️ YOUR JOURNEYS
+            </span>
+
+            <h1>
+                My Trips
+            </h1>
+
+            <p>
+                View and manage the Vellore trips
+                you've planned.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="my-trips-main">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <section class="my-trips-heading">
+
+            <div>
+
+                <span class="section-label">
+                    YOUR PLANS
+                </span>
+
+                <h2>
+                    Planned Trips
+                </h2>
+
+                <p>
+                    Your saved itineraries are private
+                    to your account.
+                </p>
+
+            </div>
+
+
+            <a
+                href="trip-planner.html"
+                class="create-new-trip-button"
+            >
+                ＋ Create New Trip
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOADING
+        ================================================== -->
+
+        <div
+            id="myTripsLoading"
+            class="my-trips-loading"
+        >
+
+            <div class="my-trips-spinner"></div>
+
+            <p>
+                Loading your trips...
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ERROR
+        ================================================== -->
+
+        <div
+            id="myTripsError"
+            class="my-trips-message error"
+            style="display:none;"
+        >
+
+            <div class="my-trips-message-icon">
+                ⚠️
+            </div>
+
+            <h3>
+                Unable to load your trips
+            </h3>
+
+            <p id="myTripsErrorText">
+                Something went wrong.
+            </p>
+
+            <button
+                type="button"
+                id="retryMyTrips"
+                class="my-trips-secondary-button"
+            >
+                Try Again
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             EMPTY
+        ================================================== -->
+
+        <div
+            id="myTripsEmpty"
+            class="my-trips-message"
+            style="display:none;"
+        >
+
+            <div class="my-trips-message-icon">
+                🗺️
+            </div>
+
+            <h3>
+                No Trips Yet
+            </h3>
+
+            <p>
+                You haven't planned a trip yet.
+                Start creating your first Vellore itinerary.
+            </p>
+
+            <a
+                href="trip-planner.html"
+                class="my-trips-primary-button"
+            >
+                🗺️ Plan a Trip
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TRIPS GRID
+        ================================================== -->
+
+        <section
+            id="myTripsGrid"
+            class="my-trips-grid"
+        >
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    Vellore<span>Discover</span>
+                </div>
+
+                <p>
+                    Discover the best places around Vellore.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="saved-places.html">
+                    Saved Places
+                </a>
+
+                <a href="trip-planner.html">
+                    Trip Planner
+                </a>
+
+                <a href="my-trips.html">
+                    My Trips
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/auth-ui.js"></script>
+
+    <script src="js/my-trips.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Create an account for the Vellore Multimedia-Based Local Discovery System."
+    >
+
+    <title>Create Account | Vellore Local Discovery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Vellore Explorer
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </nav>
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN AUTHENTICATION AREA
+    ====================================================== -->
+
+    <main class="auth-main">
+
+        <div class="auth-container">
+
+
+            <!-- =================================================
+                 INTRODUCTION
+            ================================================== -->
+
+            <section class="auth-intro">
+
+                <span class="auth-badge">
+                    Vellore Explorer
+                </span>
+
+                <h1>
+                    Create Your Account
+                </h1>
+
+                <p>
+                    Join our local discovery community and
+                    share your experiences of places across
+                    Vellore.
+                </p>
+
+            </section>
+
+
+            <!-- =================================================
+                 REGISTER CARD
+            ================================================== -->
+
+            <section class="auth-card">
+
+                <div class="auth-card-header">
+
+                    <h2>
+                        Create Account
+                    </h2>
+
+                    <p>
+                        Enter your details to get started.
+                    </p>
+
+                </div>
+
+
+                <!-- General message -->
+
+                <div
+                    id="authMessage"
+                    class="auth-message"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- =================================================
+                     REGISTER FORM
+                ================================================== -->
+
+                <form
+                    id="registerForm"
+                    class="auth-form"
+                    novalidate
+                >
+
+
+                    <!-- =============================================
+                         FULL NAME
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="name"
+                            class="auth-label"
+                        >
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="auth-input"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            maxlength="60"
+                            required
+                        >
+
+                        <div
+                            id="nameError"
+                            class="field-error"
+                            role="alert"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         EMAIL
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="email"
+                            class="auth-label"
+                        >
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="auth-input"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            maxlength="100"
+                            required
+                        >
+
+                        <div
+                            id="emailError"
+                            class="field-error"
+                            role="alert"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         PASSWORD
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="password"
+                            class="auth-label"
+                        >
+                            Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="auth-input"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                maxlength="100"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                                aria-label="Show password"
+                                title="Show password"
+                            >
+                                <span class="password-toggle-icon">
+                                    Show
+                                </span>
+                            </button>
+
+                        </div>
+
+                        <div
+                            class="password-hint"
+                        >
+                            Password must contain at least
+                            6 characters.
+                        </div>
+
+                        <div
+                            id="passwordError"
+                            class="field-error"
+                            role="alert"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         CONFIRM PASSWORD
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="confirmPassword"
+                            class="auth-label"
+                        >
+                            Confirm Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                class="auth-input"
+                                placeholder="Re-enter your password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                maxlength="100"
+                                required
+                            >
+
+                        </div>
+
+                        <div
+                            id="confirmPasswordError"
+                            class="field-error"
+                            role="alert"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         TERMS / INFORMATION
+                    ============================================== -->
+
+                    <div class="auth-options">
+
+                        <span class="auth-security-text">
+                            🔒 Your account information is
+                            securely protected.
+                        </span>
+
+                    </div>
+
+
+                    <!-- =============================================
+                         SUBMIT
+                    ============================================== -->
+
+                    <button
+                        type="submit"
+                        id="registerSubmitButton"
+                        class="auth-submit-btn"
+                    >
+                        <span id="registerButtonText">
+                            Create Account
+                        </span>
+                    </button>
+
+
+                    <!-- =============================================
+                         LOGIN LINK
+                    ============================================== -->
+
+                    <div class="auth-switch">
+
+                        <span>
+                            Already have an account?
+                        </span>
+
+                        <a href="login.html">
+                            Login here
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="auth-footer">
+
+        <p>
+            © 2026 Vellore Multimedia-Based Local Discovery System.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

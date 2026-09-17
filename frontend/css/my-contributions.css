@@ -1,0 +1,2298 @@
+/* =========================================================
+   VELLORE DISCOVER
+   MY CONTRIBUTIONS
+   PROFESSIONAL TOURISM UI
+   GREEN + BLUE + SKY BLUE + ORANGE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.my-contributions-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #eef9ff 0%,
+            #ffffff 38%,
+            #f2faf7 100%
+        );
+
+    color: #17323d;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.my-contributions-page .navbar {
+    position: relative;
+
+    z-index: 100;
+
+    width: 100%;
+
+    background:
+        #ffffff;
+
+    color:
+        #17323d;
+
+    border-bottom:
+        1px solid #dcebf1;
+
+    box-shadow:
+        0 4px 18px rgba(31, 83, 105, 0.07);
+}
+
+
+.my-contributions-page .nav-container {
+    min-height: 76px;
+}
+
+
+.my-contributions-page .nav-links {
+    gap: 8px;
+}
+
+
+.my-contributions-page .nav-links a {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 8px 13px;
+
+    border-radius: 9px;
+
+    color: #526b76;
+
+    font-size: 0.86rem;
+
+    font-weight: 750;
+
+    opacity: 1;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.my-contributions-page .nav-links a:hover,
+.my-contributions-page .nav-links a.active {
+    background:
+        #eaf7ff;
+
+    color:
+        #16779a;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.my-contributions-page .nav-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   BACK HOME
+   ========================================================= */
+
+.back-home-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0 16px;
+
+    border:
+        1px solid #cfe2e9;
+
+    border-radius: 10px;
+
+    background:
+        #f3faff;
+
+    color:
+        #28728c;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.back-home-btn:hover {
+    background:
+        #e2f4fc;
+
+    border-color:
+        #a8d2e2;
+
+    color:
+        #126781;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   LOGOUT
+   ========================================================= */
+
+.logout-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 0 17px;
+
+    border:
+        none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e56b55,
+            #d94c42
+        );
+
+    color:
+        #ffffff;
+
+    font-family:
+        inherit;
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 6px 16px rgba(217, 76, 66, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+.logout-btn:hover {
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.04);
+
+    box-shadow:
+        0 10px 22px rgba(217, 76, 66, 0.24);
+}
+
+
+.logout-btn:active {
+    transform:
+        scale(0.97);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.contributions-hero {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #137c9f 0%,
+            #169c87 48%,
+            #43b6d8 100%
+        );
+}
+
+
+.contributions-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    top: -230px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+}
+
+
+.contributions-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    right: -100px;
+    bottom: -220px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.13);
+}
+
+
+.contributions-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(9, 76, 94, 0.15),
+            rgba(15, 121, 93, 0.08)
+        );
+}
+
+
+.contributions-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(900px, 90%);
+
+    padding:
+        55px 20px;
+
+    text-align:
+        center;
+
+    color:
+        #ffffff;
+}
+
+
+/* =========================================================
+   HERO BADGE
+   ========================================================= */
+
+.hero-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        8px 16px;
+
+    margin-bottom:
+        17px;
+
+    border:
+        1px solid rgba(255,255,255,0.38);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    backdrop-filter:
+        blur(8px);
+
+    font-size:
+        11px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        1.7px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.contributions-hero-content h1 {
+    margin:
+        0 0 14px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(36px, 5vw, 58px);
+
+    line-height:
+        1.08;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        -1.5px;
+}
+
+
+.contributions-hero-content h1::after {
+    content: "";
+
+    display: block;
+
+    width:
+        60px;
+
+    height:
+        4px;
+
+    margin:
+        16px auto 0;
+
+    border-radius:
+        999px;
+
+    background:
+        #ffd166;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.contributions-hero-content p {
+    max-width:
+        650px;
+
+    margin:
+        0 auto;
+
+    color:
+        rgba(255,255,255,0.91);
+
+    font-size:
+        16px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   USER SUMMARY
+   ========================================================= */
+
+.user-summary-section {
+    position: relative;
+
+    margin-top:
+        -55px;
+
+    padding:
+        0 20px 35px;
+
+    z-index:
+        10;
+}
+
+
+.user-summary-container {
+    width:
+        min(1180px, 100%);
+
+    margin:
+        0 auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(280px, 1.1fr)
+        minmax(450px, 1.9fr);
+
+    gap:
+        20px;
+
+    align-items:
+        stretch;
+}
+
+
+/* =========================================================
+   PROFILE CARD
+   ========================================================= */
+
+.user-profile-card {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+
+    padding:
+        25px;
+
+    border:
+        1px solid #dcecf1;
+
+    border-radius:
+        18px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(28, 83, 103, 0.10);
+}
+
+
+.user-avatar {
+    width:
+        68px;
+
+    height:
+        68px;
+
+    flex:
+        0 0 68px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1584a8,
+            #19a47b
+        );
+
+    color:
+        #ffffff;
+
+    font-size:
+        27px;
+
+    font-weight:
+        850;
+
+    box-shadow:
+        0 9px 22px rgba(25, 150, 124, 0.22);
+}
+
+
+.user-profile-info {
+    min-width:
+        0;
+}
+
+
+.profile-label {
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        #1682a5;
+
+    font-size:
+        10px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        1.2px;
+}
+
+
+.user-profile-info h2 {
+    margin:
+        0 0 4px;
+
+    color:
+        #17323d;
+
+    font-size:
+        22px;
+
+    font-weight:
+        850;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+.user-profile-info p {
+    margin:
+        0;
+
+    color:
+        #71858e;
+
+    font-size:
+        13px;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.contribution-statistics {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap:
+        14px;
+}
+
+
+.stat-card {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    min-width:
+        0;
+
+    padding:
+        18px;
+
+    border:
+        1px solid #dcecf1;
+
+    border-radius:
+        18px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(28, 83, 103, 0.07);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.stat-card:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 17px 35px rgba(28, 83, 103, 0.11);
+}
+
+
+.stat-icon {
+    width:
+        46px;
+
+    height:
+        46px;
+
+    flex:
+        0 0 46px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        13px;
+
+    font-size:
+        20px;
+}
+
+
+/* Green */
+
+.stat-icon.green {
+    background:
+        #e4f8ed;
+
+    color:
+        #15966d;
+}
+
+
+/* Orange */
+
+.stat-icon.orange {
+    background:
+        #fff1d9;
+
+    color:
+        #e69520;
+}
+
+
+/* Blue */
+
+.stat-icon.blue {
+    background:
+        #e4f4ff;
+
+    color:
+        #1681ad;
+}
+
+
+/* Purple converted to sky blue */
+
+.stat-icon.purple {
+    background:
+        #e2f5ff;
+
+    color:
+        #167ca4;
+}
+
+
+.stat-number {
+    display:
+        block;
+
+    color:
+        #17323d;
+
+    font-size:
+        23px;
+
+    line-height:
+        1.1;
+
+    font-weight:
+        850;
+}
+
+
+.stat-label {
+    display:
+        block;
+
+    margin-top:
+        3px;
+
+    color:
+        #7a8c94;
+
+    font-size:
+        11px;
+
+    font-weight:
+        650;
+
+    white-space:
+        nowrap;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.my-contributions-section {
+    padding:
+        55px 20px 90px;
+}
+
+
+.content-container {
+    width:
+        min(1180px, 100%);
+
+    margin:
+        0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.my-contributions-section .section-heading {
+    margin-bottom:
+        35px;
+}
+
+
+.my-contributions-section .section-label {
+    display:
+        inline-block;
+
+    margin-bottom:
+        9px;
+
+    color:
+        #1682a5;
+
+    font-size:
+        11px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        1.7px;
+}
+
+
+.my-contributions-section .section-heading h2 {
+    margin:
+        0 0 9px;
+
+    color:
+        #17323d;
+
+    font-size:
+        clamp(28px, 4vw, 38px);
+
+    line-height:
+        1.2;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        -0.8px;
+}
+
+
+.my-contributions-section .section-heading p {
+    margin:
+        0;
+
+    color:
+        #71858e;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.contributions-message {
+    display:
+        none;
+
+    margin-bottom:
+        25px;
+
+    padding:
+        14px 17px;
+
+    border-radius:
+        12px;
+
+    font-size:
+        14px;
+
+    font-weight:
+        650;
+}
+
+
+.contributions-message.show {
+    display:
+        block;
+}
+
+
+.contributions-message.success {
+    background:
+        #e8f8ef;
+
+    color:
+        #18784f;
+
+    border:
+        1px solid #c8ead7;
+}
+
+
+.contributions-message.error {
+    background:
+        #fff0f0;
+
+    color:
+        #b83232;
+
+    border:
+        1px solid #f1cccc;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.contributions-loading {
+    min-height:
+        260px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    padding:
+        40px;
+
+    border:
+        1px solid #dcecf1;
+
+    border-radius:
+        20px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(28, 83, 103, 0.05);
+}
+
+
+.loading-spinner {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    border-radius:
+        50%;
+
+    border:
+        4px solid #dceff5;
+
+    border-top-color:
+        #1682a5;
+
+    border-right-color:
+        #19a47b;
+
+    animation:
+        contributionSpin 0.8s linear infinite;
+}
+
+
+@keyframes contributionSpin {
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}
+
+
+.contributions-loading p {
+    margin:
+        0;
+
+    color:
+        #71858e;
+
+    font-size:
+        14px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.empty-contributions {
+    padding:
+        60px 25px;
+
+    text-align:
+        center;
+
+    border:
+        1px solid #dcecf1;
+
+    border-radius:
+        22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f0faff
+        );
+
+    box-shadow:
+        0 12px 35px rgba(28, 83, 103, 0.06);
+}
+
+
+.empty-icon {
+    width:
+        76px;
+
+    height:
+        76px;
+
+    margin:
+        0 auto 20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        22px;
+
+    background:
+        #e5f6ff;
+
+    color:
+        #1682a5;
+
+    font-size:
+        32px;
+}
+
+
+.empty-contributions h3 {
+    margin:
+        0 0 9px;
+
+    color:
+        #17323d;
+
+    font-size:
+        23px;
+
+    font-weight:
+        850;
+}
+
+
+.empty-contributions p {
+    max-width:
+        570px;
+
+    margin:
+        0 auto 25px;
+
+    color:
+        #71858e;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+   ========================================================= */
+
+.explore-btn {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        45px;
+
+    padding:
+        0 21px;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1682a5,
+            #19a47b
+        );
+
+    color:
+        #ffffff;
+
+    text-decoration:
+        none;
+
+    font-size:
+        14px;
+
+    font-weight:
+        850;
+
+    box-shadow:
+        0 8px 20px rgba(24, 139, 132, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.explore-btn:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 26px rgba(24, 139, 132, 0.28);
+}
+
+
+/* =========================================================
+   CONTRIBUTIONS GRID
+   ========================================================= */
+
+.contributions-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        24px;
+}
+
+
+/* =========================================================
+   CONTRIBUTION CARD
+   ========================================================= */
+
+.my-contribution-card {
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #dcecf1;
+
+    border-radius:
+        20px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 12px 35px rgba(28, 83, 103, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.my-contribution-card::before {
+    content:
+        "";
+
+    display:
+        block;
+
+    height:
+        5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1682a5,
+            #19a47b,
+            #f3a638
+        );
+}
+
+
+.my-contribution-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #c6e0e8;
+
+    box-shadow:
+        0 20px 45px rgba(28, 83, 103, 0.12);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.contribution-card-header {
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    padding:
+        23px 23px 15px;
+}
+
+
+.contribution-place-info {
+    min-width:
+        0;
+}
+
+
+.contribution-place-info h3 {
+    margin:
+        0 0 6px;
+
+    color:
+        #17323d;
+
+    font-size:
+        20px;
+
+    line-height:
+        1.3;
+
+    font-weight:
+        850;
+}
+
+
+.contribution-date {
+    color:
+        #85969d;
+
+    font-size:
+        12px;
+
+    font-weight:
+        550;
+}
+
+
+/* =========================================================
+   RATING
+   ========================================================= */
+
+.contribution-rating {
+    flex-shrink:
+        0;
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid #f5d98c;
+
+    border-radius:
+        9px;
+
+    background:
+        #fff8df;
+
+    color:
+        #d89012;
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+
+    white-space:
+        nowrap;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.contribution-card-content {
+    padding:
+        5px 23px 23px;
+}
+
+
+.contribution-content-block {
+    margin-top:
+        17px;
+}
+
+
+.contribution-content-label {
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        #1682a5;
+
+    font-size:
+        11px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.9px;
+
+    text-transform:
+        uppercase;
+}
+
+
+.contribution-content-text {
+    margin:
+        0;
+
+    color:
+        #536a74;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.7;
+
+    white-space:
+        pre-wrap;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/* =========================================================
+   PHOTO GRID
+   ========================================================= */
+
+.contribution-photo-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap:
+        8px;
+
+    margin-top:
+        12px;
+}
+
+
+.contribution-photo {
+    position:
+        relative;
+
+    aspect-ratio:
+        1 / 1;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        10px;
+
+    background:
+        #eaf3f6;
+
+    cursor:
+        pointer;
+}
+
+
+.contribution-photo img {
+    width:
+        100%;
+
+    height:
+        100%;
+
+    display:
+        block;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.contribution-photo:hover img {
+    transform:
+        scale(1.06);
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.contribution-video {
+    margin-top:
+        14px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        13px;
+
+    background:
+        #17323d;
+
+    box-shadow:
+        0 7px 20px rgba(25, 60, 73, 0.10);
+}
+
+
+.contribution-video video {
+    width:
+        100%;
+
+    max-height:
+        330px;
+
+    display:
+        block;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+   ========================================================= */
+
+.contribution-card-footer {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    padding:
+        15px 23px;
+
+    border-top:
+        1px solid #e7f0f3;
+
+    background:
+        #f8fcfd;
+}
+
+
+.contribution-media-count {
+    color:
+        #71858e;
+
+    font-size:
+        12px;
+
+    font-weight:
+        650;
+}
+
+
+/* =========================================================
+   VIEW PLACE
+   ========================================================= */
+
+.view-place-btn {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        36px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid #c6e2ed;
+
+    border-radius:
+        9px;
+
+    background:
+        #eaf7fd;
+
+    color:
+        #16789d;
+
+    text-decoration:
+        none;
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.view-place-btn:hover {
+    background:
+        #1682a5;
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   CONTRIBUTION STATUS
+   ========================================================= */
+
+.contribution-status {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    padding:
+        7px 12px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        850;
+
+    white-space:
+        nowrap;
+}
+
+
+.contribution-status.pending {
+    background:
+        #fff4d5;
+
+    color:
+        #9a6507;
+}
+
+
+.contribution-status.approved {
+    background:
+        #e2f8ec;
+
+    color:
+        #18784f;
+}
+
+
+.contribution-status.rejected {
+    background:
+        #fee8e8;
+
+    color:
+        #b83232;
+}
+
+
+/* =========================================================
+   STATUS INFORMATION
+   ========================================================= */
+
+.contribution-status-info {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    margin:
+        0 24px 20px;
+
+    padding:
+        13px 15px;
+
+    border-left:
+        4px solid;
+
+    border-radius:
+        8px;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.5;
+}
+
+
+.contribution-status-info strong {
+    font-size:
+        13px;
+}
+
+
+.contribution-status-info span {
+    color:
+        #647b85;
+}
+
+
+.contribution-status-info.pending {
+    border-left-color:
+        #f3a638;
+
+    background:
+        #fffaf0;
+}
+
+
+.contribution-status-info.pending strong {
+    color:
+        #99640c;
+}
+
+
+.contribution-status-info.approved {
+    border-left-color:
+        #22a76a;
+
+    background:
+        #f0fbf5;
+}
+
+
+.contribution-status-info.approved strong {
+    color:
+        #167347;
+}
+
+
+.contribution-status-info.rejected {
+    border-left-color:
+        #e04d4d;
+
+    background:
+        #fff3f3;
+}
+
+
+.contribution-status-info.rejected strong {
+    color:
+        #a62d2d;
+}
+
+
+/* =========================================================
+   MY CONTRIBUTION ACTIONS
+   ========================================================= */
+
+.my-contribution-actions {
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        10px;
+
+    margin-top:
+        22px;
+
+    padding-top:
+        18px;
+
+    border-top:
+        1px solid #e3eef2;
+}
+
+
+.my-contribution-actions a,
+.my-contribution-actions button {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        42px;
+
+    padding:
+        0 16px;
+
+    border-radius:
+        10px;
+
+    font-family:
+        inherit;
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+
+    text-decoration:
+        none;
+
+    cursor:
+        pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+   ========================================================= */
+
+.my-contribution-view-btn {
+    border:
+        1px solid #b9ddea;
+
+    background:
+        #eaf7fd;
+
+    color:
+        #16789d;
+}
+
+
+.my-contribution-view-btn:hover {
+    background:
+        #1682a5;
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(22, 130, 165, 0.16);
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+   ========================================================= */
+
+.my-contribution-edit-btn {
+    border:
+        1px solid #b9dfd0;
+
+    background:
+        #eaf8f1;
+
+    color:
+        #16815d;
+}
+
+
+.my-contribution-edit-btn:hover {
+    background:
+        #19a47b;
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(25, 164, 123, 0.17);
+}
+
+
+/* =========================================================
+   DELETE BUTTON
+   ========================================================= */
+
+.my-contribution-delete-btn {
+    border:
+        1px solid #f3c7c7;
+
+    background:
+        #fff3f3;
+
+    color:
+        #d43f3f;
+}
+
+
+.my-contribution-delete-btn:hover {
+    background:
+        #df5149;
+
+    border-color:
+        #df5149;
+
+    color:
+        #ffffff;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 16px rgba(223, 81, 73, 0.17);
+}
+
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.my-contribution-actions button:disabled {
+    opacity:
+        0.55;
+
+    cursor:
+        not-allowed;
+
+    transform:
+        none;
+
+    box-shadow:
+        none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.my-contributions-page .footer {
+    background:
+        #123f52;
+
+    color:
+        #ffffff;
+
+    border:
+        none;
+}
+
+
+.my-contributions-page .footer-content {
+    width:
+        min(1180px, 94%);
+}
+
+
+.my-contributions-page .footer h3 {
+    color:
+        #ffffff;
+}
+
+
+.my-contributions-page .footer p {
+    color:
+        #bfd4dc;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .user-summary-container {
+        grid-template-columns:
+            1fr;
+    }
+
+    .contribution-statistics {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 780px) {
+
+    .contributions-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .contribution-statistics {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .contributions-hero {
+        min-height:
+            300px;
+    }
+
+    .my-contributions-section {
+        padding-top:
+            45px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .my-contributions-page .nav-container {
+        min-height:
+            68px;
+    }
+
+    .my-contributions-page .nav-links {
+        display:
+            none;
+    }
+
+    .my-contributions-page .nav-actions {
+        gap:
+            7px;
+    }
+
+    .back-home-btn,
+    .logout-btn {
+        min-height:
+            38px;
+
+        padding:
+            0 11px;
+
+        font-size:
+            12px;
+    }
+
+    .contributions-hero-content {
+        padding:
+            45px 15px;
+    }
+
+    .contributions-hero-content h1 {
+        font-size:
+            36px;
+
+        letter-spacing:
+            -1px;
+    }
+
+    .contributions-hero-content p {
+        font-size:
+            14px;
+    }
+
+    .user-summary-section {
+        margin-top:
+            -40px;
+
+        padding-left:
+            14px;
+
+        padding-right:
+            14px;
+    }
+
+    .user-profile-card {
+        padding:
+            19px;
+
+        gap:
+            13px;
+    }
+
+    .user-avatar {
+        width:
+            57px;
+
+        height:
+            57px;
+
+        flex-basis:
+            57px;
+
+        border-radius:
+            15px;
+
+        font-size:
+            22px;
+    }
+
+    .user-profile-info h2 {
+        font-size:
+            19px;
+    }
+
+    .contribution-statistics {
+        gap:
+            10px;
+    }
+
+    .stat-card {
+        padding:
+            14px;
+
+        gap:
+            9px;
+    }
+
+    .stat-icon {
+        width:
+            39px;
+
+        height:
+            39px;
+
+        flex-basis:
+            39px;
+
+        font-size:
+            17px;
+    }
+
+    .stat-number {
+        font-size:
+            20px;
+    }
+
+    .stat-label {
+        font-size:
+            10px;
+    }
+
+    .my-contributions-section {
+        padding-left:
+            14px;
+
+        padding-right:
+            14px;
+
+        padding-bottom:
+            60px;
+    }
+
+    .contribution-card-header {
+        padding:
+            19px 18px 12px;
+    }
+
+    .contribution-card-content {
+        padding:
+            5px 18px 18px;
+    }
+
+    .contribution-card-footer {
+        padding-left:
+            18px;
+
+        padding-right:
+            18px;
+    }
+
+    .contribution-place-info h3 {
+        font-size:
+            18px;
+    }
+
+    .contribution-rating {
+        font-size:
+            12px;
+
+        padding:
+            6px 8px;
+    }
+
+    .contribution-photo-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .empty-contributions {
+        padding:
+            45px 18px;
+    }
+
+    .contribution-status-info {
+        margin-left:
+            18px;
+
+        margin-right:
+            18px;
+    }
+
+    .my-contribution-actions {
+        flex-direction:
+            column;
+    }
+
+    .my-contribution-actions a,
+    .my-contribution-actions button {
+        width:
+            100%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .my-contributions-page .nav-container {
+        width:
+            calc(100% - 20px);
+    }
+
+    .my-contributions-page .logo {
+        font-size:
+            1.12rem;
+    }
+
+    .contribution-statistics {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .stat-card {
+        min-height:
+            72px;
+    }
+
+    .contribution-card-header {
+        flex-direction:
+            column;
+    }
+
+    .contribution-rating {
+        align-self:
+            flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.back-home-btn:focus-visible,
+.logout-btn:focus-visible,
+.explore-btn:focus-visible,
+.view-place-btn:focus-visible,
+.my-contribution-actions a:focus-visible,
+.my-contribution-actions button:focus-visible,
+.contribution-photo:focus-visible {
+    outline:
+        3px solid rgba(22, 130, 165, 0.28);
+
+    outline-offset:
+        3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .back-home-btn,
+    .logout-btn,
+    .stat-card,
+    .my-contribution-card,
+    .explore-btn,
+    .view-place-btn,
+    .contribution-photo img,
+    .my-contribution-actions a,
+    .my-contribution-actions button {
+        transition:
+            none;
+    }
+
+    .loading-spinner {
+        animation:
+            none;
+    }
+
+}
