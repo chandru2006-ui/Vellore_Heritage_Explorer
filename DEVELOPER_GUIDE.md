@@ -167,10 +167,11 @@ Example structure:
 ```env
 MONGO_URI=mongodb://localhost:27017/vellore_multimedia
 PORT=5000
-JWT_SECRET=your_secret_here
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+JWT_SECRET=vellore_multimedia_secret_2026_change_this_later
+CLOUDINARY_CLOUD_NAME=lbsaiycm
+CLOUDINARY_API_KEY=637638945557627
+CLOUDINARY_API_SECRET=9nFXsyIFbD-rnc1Nu1Wyxb-F34o
+
 ```
 
 Never commit the real `.env` file to GitHub.
